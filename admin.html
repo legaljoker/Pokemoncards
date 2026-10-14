@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e3350d">
+  <meta name="robots" content="noindex">
+  <title>Add & Manage Cards</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="row">
+      <h1><span class="ball"></span>Add &amp; Manage</h1>
+      <a class="header-link" href="index.html">← Gallery</a>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button data-tab="add" class="active">Add cards</button>
+      <button data-tab="manage">Edit cards</button>
+      <button data-tab="settings">Settings</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= ADD ================= -->
+    <section class="panel active" id="panel-add">
+      <div class="box" id="needSettings" hidden>
+        <h2>First time here?</h2>
+        <p class="help">Go to <b>Settings</b> and paste your GitHub token so this page can save cards to your site.</p>
+      </div>
+
+      <div class="box">
+        <h2>1. Choose photos</h2>
+        <p class="help">Pick a <b>binder page</b> photo to cut it into separate cards, or pick photos of <b>single cards</b>. You can take a new photo or choose from your gallery.</p>
+        <div class="btn-row">
+          <label class="btn primary file-btn">📒 Binder page photo
+            <input type="file" id="binderFile" accept="image/*">
+          </label>
+          <label class="btn file-btn">🃏 Single card photo(s)
+            <input type="file" id="singleFiles" accept="image/*" multiple>
+          </label>
+        </div>
+        <label class="check"><input type="checkbox" id="autoOcr" checked> Try to read card names automatically</label>
+      </div>
+
+      <div class="box" id="splitBox" hidden>
+        <h2>2. Line up the grid</h2>
+        <p class="help">Make the red boxes sit on the cards. Pick the layout, then nudge the edges until each box covers one card.</p>
+        <div class="btn-row">
+          <button class="btn small" data-grid="2x4">2 across × 4 down</button>
+          <button class="btn small" data-grid="4x2">4 across × 2 down</button>
+          <button class="btn small" data-grid="3x3">3 × 3</button>
+          <button class="btn small" data-grid="2x2">2 × 2</button>
+          <button class="btn small" id="rotateBtn">⟳ Rotate photo</button>
+        </div>
+        <div class="split-controls">
+          <label>Across <input type="number" id="gCols" min="1" max="6" value="2"></label>
+          <label>Down <input type="number" id="gRows" min="1" max="6" value="4"></label>
+          <label>Top edge <input type="range" id="mTop" min="0" max="30" step="0.5" value="2"></label>
+          <label>Bottom edge <input type="range" id="mBottom" min="0" max="30" step="0.5" value="2"></label>
+          <label>Left edge <input type="range" id="mLeft" min="0" max="30" step="0.5" value="2"></label>
+          <label>Right edge <input type="range" id="mRight" min="0" max="30" step="0.5" value="2"></label>
+          <label>Gap across <input type="range" id="gapX" min="0" max="10" step="0.25" value="1.5"></label>
+          <label>Gap down <input type="range" id="gapY" min="0" max="10" step="0.25" value="1"></label>
+        </div>
+        <canvas id="splitCanvas"></canvas>
+        <div class="btn-row" style="margin-top:10px">
+          <button class="btn primary" id="splitBtn">✂ Cut into cards</button>
+          <button class="btn" id="cancelSplit">Cancel</button>
+        </div>
+      </div>
+
+      <div class="box" id="queueBox" hidden>
+        <h2>3. Name your cards</h2>
+        <p class="help">Check each name (fix any the scanner got wrong), and remove empty pockets. Adding a back photo is optional — you can do it later from <b>Edit cards</b>.</p>
+        <div class="queue" id="queue"></div>
+        <div class="sticky-save">
+          <button class="btn primary" id="saveQueue">💾 Save to my site</button>
+          <button class="btn" id="clearQueue">Clear all</button>
+          <p class="status" id="queueStatus"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MANAGE ================= -->
+    <section class="panel" id="panel-manage">
+      <div class="box">
+        <h2>Edit cards</h2>
+        <p class="help">Rename cards, add or replace front/back photos, or delete cards. Changes are highlighted until you save.</p>
+        <div class="btn-row">
+          <input type="search" id="manageSearch" placeholder="Search…" style="flex:1;min-width:0;padding:10px 12px;border:1px solid var(--border);border-radius:8px;background:var(--surface-2)">
+          <button class="btn" id="reloadManage">↻ Reload</button>
+        </div>
+        <p class="status" id="manageLoadStatus"></p>
+      </div>
+      <div class="queue" id="manageList"></div>
+      <div class="sticky-save" style="margin-top:16px">
+        <button class="btn primary" id="saveManage">💾 Save changes</button>
+        <p class="status" id="manageStatus"></p>
+      </div>
+    </section>
+
+    <!-- ================= SETTINGS ================= -->
+    <section class="panel" id="panel-settings">
+      <div class="box">
+        <h2>Connect to GitHub</h2>
+        <p class="help">Your cards and photos are stored in your GitHub repository. This page needs a token to save to it. The token is only kept on <b>this device</b> — do this once on your phone and once on your PC.</p>
+        <label class="field">GitHub username <input id="sOwner" autocapitalize="off" autocorrect="off"></label>
+        <label class="field">Repository <input id="sRepo" autocapitalize="off" autocorrect="off"></label>
+        <label class="field">Branch <input id="sBranch" autocapitalize="off" autocorrect="off"></label>
+        <label class="field">Token <input id="sToken" type="password" autocomplete="off" placeholder="github_pat_…"></label>
+        <div class="btn-row">
+          <button class="btn primary" id="saveSettings">Save &amp; test</button>
+          <button class="btn danger" id="forgetToken">Forget token on this device</button>
+        </div>
+        <p class="status" id="settingsStatus"></p>
+        <h3>How to get a token</h3>
+        <ol class="help">
+          <li>On GitHub, open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Settings → Developer settings → Fine-grained tokens → Generate new token</a>.</li>
+          <li>Name it “Pokemon cards site”, pick an expiration (up to 1 year).</li>
+          <li>Under <b>Repository access</b> choose <b>Only select repositories</b> → your cards repository.</li>
+          <li>Under <b>Permissions → Repository permissions</b> set <b>Contents</b> to <b>Read and write</b>.</li>
+          <li>Generate, copy the token and paste it above.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

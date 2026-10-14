@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e3350d">
+  <title>My Pokémon Cards</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="row">
+      <h1><span class="ball"></span>My Pokémon Cards</h1>
+      <a class="header-link" href="admin.html">＋ Add</a>
+    </div>
+    <div class="search-row">
+      <input id="search" type="search" placeholder="Search by name, set, number…" autocomplete="off" enterkeyhint="search">
+      <select id="sort" aria-label="Sort">
+        <option value="name">A–Z</option>
+        <option value="new">Newest</option>
+        <option value="old">Oldest</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <p class="count" id="count"></p>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden></p>
+  </main>
+
+  <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="vName">
+    <div class="viewer-top">
+      <div class="title">
+        <h2 id="vName"></h2>
+        <p id="vSub"></p>
+      </div>
+      <button class="icon-btn" id="vClose" aria-label="Close">✕</button>
+    </div>
+    <div class="viewer-stage" id="vStage">
+      <div class="flipper" id="vFlipper">
+        <div class="face front"><img id="vFront" alt=""></div>
+        <div class="face back"><img id="vBack" alt=""></div>
+      </div>
+    </div>
+    <p class="viewer-notes" id="vNotes"></p>
+    <div class="viewer-bottom">
+      <button class="pill-btn" id="vPrev" aria-label="Previous card">‹ Prev</button>
+      <button class="pill-btn primary" id="vFlip">Show back</button>
+      <button class="pill-btn" id="vNext" aria-label="Next card">Next ›</button>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
