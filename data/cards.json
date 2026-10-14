@@ -109,6 +109,39 @@
       "thumb": "images/cards/sealeo-9sxvx-thumb-mv8mzxr1.jpg",
       "added": "2026-10-14T21:43:39.857Z",
       "back": "images/cards/sealeo-9sxvx-back-mv8mzxrv.jpg"
+    },
+    {
+      "id": "lt-surge-s-raichu-76ur2",
+      "name": "Lt. Surge's Raichu",
+      "set": "",
+      "number": "11/132",
+      "notes": "",
+      "front": "images/cards/lt-surge-s-raichu-76ur2-front-mv8n99iy.jpg",
+      "thumb": "images/cards/lt-surge-s-raichu-76ur2-thumb-mv8n99iy.jpg",
+      "added": "2026-10-14T21:50:55.354Z",
+      "back": "images/cards/lt-surge-s-raichu-76ur2-back-mv8n99le.jpg"
+    },
+    {
+      "id": "sabrina-s-gastly-1ge4z",
+      "name": "Sabrina's Gastly",
+      "set": "",
+      "number": "97/132",
+      "notes": "",
+      "front": "images/cards/sabrina-s-gastly-1ge4z-front-mv8n99m9.jpg",
+      "thumb": "images/cards/sabrina-s-gastly-1ge4z-thumb-mv8n99m9.jpg",
+      "added": "2026-10-14T21:50:55.354Z",
+      "back": "images/cards/sabrina-s-gastly-1ge4z-back-mv8n99n0.jpg"
+    },
+    {
+      "id": "articuno-dssla",
+      "name": "Articuno",
+      "set": "Promo",
+      "number": "22",
+      "notes": "Damage",
+      "front": "images/cards/articuno-dssla-front-mv8n99nv.jpg",
+      "thumb": "images/cards/articuno-dssla-thumb-mv8n99nv.jpg",
+      "added": "2026-10-14T21:50:55.354Z",
+      "back": "images/cards/articuno-dssla-back-mv8n99oo.jpg"
     }
   ]
 }
