@@ -1,3 +1,15 @@
 {
-  "cards": []
+  "cards": [
+    {
+      "id": "psyduck-ywzg5",
+      "name": "Psyduck",
+      "set": "",
+      "number": "79/105",
+      "notes": "",
+      "front": "images/cards/psyduck-ywzg5-front-mv8m4av9.jpg",
+      "thumb": "images/cards/psyduck-ywzg5-thumb-mv8m4av9.jpg",
+      "added": "2026-10-14T21:19:04.197Z",
+      "back": "images/cards/psyduck-ywzg5-back-mv8m4ba3.jpg"
+    }
+  ]
 }
