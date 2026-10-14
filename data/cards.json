@@ -32,6 +32,61 @@
       "thumb": "images/cards/haunter-ru669-thumb-mv8mboyx.jpg",
       "added": "2026-10-14T21:24:49.065Z",
       "back": "images/cards/haunter-ru669-back-mv8mbpht.jpg"
+    },
+    {
+      "id": "wobbuffet-ez9fc",
+      "name": "Wobbuffet",
+      "set": "",
+      "number": "16/75",
+      "notes": "Holofoil",
+      "front": "images/cards/wobbuffet-ez9fc-front-mv8mny1z.jpg",
+      "thumb": "images/cards/wobbuffet-ez9fc-thumb-mv8mny1z.jpg",
+      "added": "2026-10-14T21:34:20.711Z",
+      "back": "images/cards/wobbuffet-ez9fc-back-mv8mny2w.jpg"
+    },
+    {
+      "id": "dark-gyarados-ussjn",
+      "name": "Dark Gyarados",
+      "set": "",
+      "number": "8/82",
+      "notes": "Holofoil",
+      "front": "images/cards/dark-gyarados-ussjn-front-mv8mny3k.jpg",
+      "thumb": "images/cards/dark-gyarados-ussjn-thumb-mv8mny3k.jpg",
+      "added": "2026-10-14T21:34:20.711Z",
+      "back": "images/cards/dark-gyarados-ussjn-back-mv8mny5g.jpg"
+    },
+    {
+      "id": "groudon-ex-pfpvu",
+      "name": "Groudon ex",
+      "set": "",
+      "number": "002",
+      "notes": "Promo",
+      "front": "images/cards/groudon-ex-pfpvu-front-mv8mny65.jpg",
+      "thumb": "images/cards/groudon-ex-pfpvu-thumb-mv8mny65.jpg",
+      "added": "2026-10-14T21:34:20.711Z",
+      "back": "images/cards/groudon-ex-pfpvu-back-mv8mny72.jpg"
+    },
+    {
+      "id": "marill-eyfyv",
+      "name": "Marill",
+      "set": "",
+      "number": "68/100",
+      "notes": "",
+      "front": "images/cards/marill-eyfyv-front-mv8mny7w.jpg",
+      "thumb": "images/cards/marill-eyfyv-thumb-mv8mny7w.jpg",
+      "added": "2026-10-14T21:34:20.711Z",
+      "back": "images/cards/marill-eyfyv-back-mv8mny8r.jpg"
+    },
+    {
+      "id": "clefairy-20fpg",
+      "name": "Clefairy",
+      "set": "",
+      "number": "6/130",
+      "notes": "Holofoil",
+      "front": "images/cards/clefairy-20fpg-front-mv8mny9f.jpg",
+      "thumb": "images/cards/clefairy-20fpg-thumb-mv8mny9f.jpg",
+      "added": "2026-10-14T21:34:20.711Z",
+      "back": "images/cards/clefairy-20fpg-back-mv8mnyar.jpg"
     }
   ]
 }
