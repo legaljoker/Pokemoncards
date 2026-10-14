@@ -87,6 +87,28 @@
       "thumb": "images/cards/clefairy-20fpg-thumb-mv8mny9f.jpg",
       "added": "2026-10-14T21:34:20.711Z",
       "back": "images/cards/clefairy-20fpg-back-mv8mnyar.jpg"
+    },
+    {
+      "id": "sabrina-porygon-ody8k",
+      "name": "Sabrina' Porygon",
+      "set": "",
+      "number": "98/132",
+      "notes": "",
+      "front": "images/cards/sabrina-porygon-ody8k-front-mv8mzxht.jpg",
+      "thumb": "images/cards/sabrina-porygon-ody8k-thumb-mv8mzxht.jpg",
+      "added": "2026-10-14T21:43:39.857Z",
+      "back": "images/cards/sabrina-porygon-ody8k-back-mv8mzxqa.jpg"
+    },
+    {
+      "id": "sealeo-9sxvx",
+      "name": "Sealeo",
+      "set": "Promo",
+      "number": "34",
+      "notes": "Damage",
+      "front": "images/cards/sealeo-9sxvx-front-mv8mzxr1.jpg",
+      "thumb": "images/cards/sealeo-9sxvx-thumb-mv8mzxr1.jpg",
+      "added": "2026-10-14T21:43:39.857Z",
+      "back": "images/cards/sealeo-9sxvx-back-mv8mzxrv.jpg"
     }
   ]
 }
