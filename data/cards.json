@@ -142,6 +142,116 @@
       "thumb": "images/cards/articuno-dssla-thumb-mv8n99nv.jpg",
       "added": "2026-10-14T21:50:55.354Z",
       "back": "images/cards/articuno-dssla-back-mv8n99oo.jpg"
+    },
+    {
+      "id": "dragonite-0hqdb",
+      "name": "Dragonite",
+      "set": "Promo",
+      "number": "5",
+      "notes": "",
+      "front": "images/cards/dragonite-0hqdb-front-mv8o42is.jpg",
+      "thumb": "images/cards/dragonite-0hqdb-thumb-mv8o42is.jpg",
+      "added": "2026-10-14T22:14:52.612Z",
+      "back": "images/cards/dragonite-0hqdb-back-mv8o42jq.jpg"
+    },
+    {
+      "id": "brock-s-onix-y9bxa",
+      "name": "Brock's Onix",
+      "set": "",
+      "number": "69/132",
+      "notes": "",
+      "front": "images/cards/brock-s-onix-y9bxa-front-mv8o42kk.jpg",
+      "thumb": "images/cards/brock-s-onix-y9bxa-thumb-mv8o42kk.jpg",
+      "added": "2026-10-14T22:14:52.612Z",
+      "back": "images/cards/brock-s-onix-y9bxa-back-mv8o42kw.jpg"
+    },
+    {
+      "id": "misty-s-horsea-yyrhq",
+      "name": "Misty's Horsea",
+      "set": "",
+      "number": "86/132",
+      "notes": "",
+      "front": "images/cards/misty-s-horsea-yyrhq-front-mv8o42l8.jpg",
+      "thumb": "images/cards/misty-s-horsea-yyrhq-thumb-mv8o42l8.jpg",
+      "added": "2026-10-14T22:14:52.612Z",
+      "back": "images/cards/misty-s-horsea-yyrhq-back-mv8o42ll.jpg"
+    },
+    {
+      "id": "brock-s-rhyhorn-jr0le",
+      "name": "Brock's Rhyhorn",
+      "set": "",
+      "number": "70/132",
+      "notes": "",
+      "front": "images/cards/brock-s-rhyhorn-jr0le-front-mv8o42ly.jpg",
+      "thumb": "images/cards/brock-s-rhyhorn-jr0le-thumb-mv8o42ly.jpg",
+      "added": "2026-10-14T22:14:52.612Z",
+      "back": "images/cards/brock-s-rhyhorn-jr0le-back-mv8o42ma.jpg"
+    },
+    {
+      "id": "misty-s-staryu-r1u4s",
+      "name": "Misty's Staryu",
+      "set": "",
+      "number": "92/132",
+      "notes": "",
+      "front": "images/cards/misty-s-staryu-r1u4s-front-mv8o42mn.jpg",
+      "thumb": "images/cards/misty-s-staryu-r1u4s-thumb-mv8o42mn.jpg",
+      "added": "2026-10-14T22:14:52.612Z",
+      "back": "images/cards/misty-s-staryu-r1u4s-back-mv8o42mz.jpg"
+    },
+    {
+      "id": "misty-s-shellder-rgeu7",
+      "name": "Misty's Shellder",
+      "set": "",
+      "number": "89/132",
+      "notes": "",
+      "front": "images/cards/misty-s-shellder-rgeu7-front-mv8o42nc.jpg",
+      "thumb": "images/cards/misty-s-shellder-rgeu7-thumb-mv8o42nc.jpg",
+      "added": "2026-10-14T22:14:52.612Z",
+      "back": "images/cards/misty-s-shellder-rgeu7-back-mv8o42xf.jpg"
+    },
+    {
+      "id": "koga-s-pidgey-h8i60",
+      "name": "Koga's Pidgey",
+      "set": "",
+      "number": "49/132",
+      "notes": "",
+      "front": "images/cards/koga-s-pidgey-h8i60-front-mv8o42ya.jpg",
+      "thumb": "images/cards/koga-s-pidgey-h8i60-thumb-mv8o42ya.jpg",
+      "added": "2026-10-14T22:14:52.612Z",
+      "back": "images/cards/koga-s-pidgey-h8i60-back-mv8o42z1.jpg"
+    },
+    {
+      "id": "blaine-s-doduo-m53q5",
+      "name": "Blaine's Doduo",
+      "set": "",
+      "number": "61/132",
+      "notes": "",
+      "front": "images/cards/blaine-s-doduo-m53q5-front-mv8o42zn.jpg",
+      "thumb": "images/cards/blaine-s-doduo-m53q5-thumb-mv8o42zn.jpg",
+      "added": "2026-10-14T22:14:52.612Z",
+      "back": "images/cards/blaine-s-doduo-m53q5-back-mv8o430g.jpg"
+    },
+    {
+      "id": "koga-s-kakuna-qgs41",
+      "name": "Koga's Kakuna",
+      "set": "",
+      "number": "47/132",
+      "notes": "",
+      "front": "images/cards/koga-s-kakuna-qgs41-front-mv8o4313.jpg",
+      "thumb": "images/cards/koga-s-kakuna-qgs41-thumb-mv8o4313.jpg",
+      "added": "2026-10-14T22:14:52.612Z",
+      "back": "images/cards/koga-s-kakuna-qgs41-back-mv8o431t.jpg"
+    },
+    {
+      "id": "blaine-s-vulpix-4s0f1",
+      "name": "Blaine's Vulpix",
+      "set": "",
+      "number": "66/132",
+      "notes": "",
+      "front": "images/cards/blaine-s-vulpix-4s0f1-front-mv8o432k.jpg",
+      "thumb": "images/cards/blaine-s-vulpix-4s0f1-thumb-mv8o432k.jpg",
+      "added": "2026-10-14T22:14:52.612Z",
+      "back": "images/cards/blaine-s-vulpix-4s0f1-back-mv8o433f.jpg"
     }
   ]
 }
