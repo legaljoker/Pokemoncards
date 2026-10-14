@@ -285,6 +285,72 @@
       "thumb": "images/cards/jolteon-japanese-6wnj9-thumb-mv8pocl0.jpg",
       "added": "2026-10-14T22:58:38.228Z",
       "back": "images/cards/jolteon-japanese-6wnj9-back-mv8poe5r.jpg"
+    },
+    {
+      "id": "xatu-japanese-3gezm",
+      "name": "Xatu - Japanese",
+      "set": "",
+      "number": "178",
+      "notes": "Japanese",
+      "front": "images/cards/xatu-japanese-3gezm-front-mv8rmk7k.jpg",
+      "thumb": "images/cards/xatu-japanese-3gezm-thumb-mv8rmk7k.jpg",
+      "added": "2026-10-14T23:53:14.192Z",
+      "back": "images/cards/xatu-japanese-3gezm-back-mv8rmkdy.jpg"
+    },
+    {
+      "id": "mewtwo-s37u2",
+      "name": "Mewtwo",
+      "set": "Promo",
+      "number": "14",
+      "notes": "",
+      "front": "images/cards/mewtwo-s37u2-front-mv8rmkf0.jpg",
+      "thumb": "images/cards/mewtwo-s37u2-thumb-mv8rmkf0.jpg",
+      "added": "2026-10-14T23:53:14.192Z",
+      "back": "images/cards/mewtwo-s37u2-back-mv8rmkg3.jpg"
+    },
+    {
+      "id": "dark-machamp-7baac",
+      "name": "Dark Machamp",
+      "set": "",
+      "number": "10/82",
+      "notes": "",
+      "front": "images/cards/dark-machamp-7baac-front-mv8rmkh6.jpg",
+      "thumb": "images/cards/dark-machamp-7baac-thumb-mv8rmkh6.jpg",
+      "added": "2026-10-14T23:53:14.192Z",
+      "back": "images/cards/dark-machamp-7baac-back-mv8rmkic.jpg"
+    },
+    {
+      "id": "gyarados-353v6",
+      "name": "Gyarados",
+      "set": "",
+      "number": "6/102",
+      "notes": "",
+      "front": "images/cards/gyarados-353v6-front-mv8rmkjc.jpg",
+      "thumb": "images/cards/gyarados-353v6-thumb-mv8rmkjc.jpg",
+      "added": "2026-10-14T23:53:14.192Z",
+      "back": "images/cards/gyarados-353v6-back-mv8rmm46.jpg"
+    },
+    {
+      "id": "chansey-jc7qu",
+      "name": "Chansey",
+      "set": "",
+      "number": "3/102",
+      "notes": "",
+      "front": "images/cards/chansey-jc7qu-front-mv8rmmx6.jpg",
+      "thumb": "images/cards/chansey-jc7qu-thumb-mv8rmmx6.jpg",
+      "added": "2026-10-14T23:53:14.192Z",
+      "back": "images/cards/chansey-jc7qu-back-mv8rmoip.jpg"
+    },
+    {
+      "id": "venusaur-7eowl",
+      "name": "Venusaur",
+      "set": "",
+      "number": "15/102",
+      "notes": "",
+      "front": "images/cards/venusaur-7eowl-front-mv8rmot6.jpg",
+      "thumb": "images/cards/venusaur-7eowl-thumb-mv8rmot6.jpg",
+      "added": "2026-10-14T23:53:14.192Z",
+      "back": "images/cards/venusaur-7eowl-back-mv8rmouc.jpg"
     }
   ]
 }
