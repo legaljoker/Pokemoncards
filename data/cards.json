@@ -109,6 +109,86 @@
       "front": "images/cards/cyndaquil-slklc-front-mv8l9pvh.jpg",
       "thumb": "images/cards/cyndaquil-slklc-thumb-mv8l9pvh.jpg",
       "added": "2026-10-14T20:55:17.100Z"
+    },
+    {
+      "id": "farfetch-d-60q9y",
+      "name": "Farfetch'd",
+      "set": "",
+      "number": "40/130",
+      "notes": "",
+      "front": "images/cards/farfetch-d-60q9y-front-mv8lihtf.jpg",
+      "thumb": "images/cards/farfetch-d-60q9y-thumb-mv8lihtf.jpg",
+      "added": "2026-10-14T21:02:06.771Z"
+    },
+    {
+      "id": "marowak-wmrjm",
+      "name": "Marowak",
+      "set": "",
+      "number": "39/64",
+      "notes": "",
+      "front": "images/cards/marowak-wmrjm-front-mv8lihto.jpg",
+      "thumb": "images/cards/marowak-wmrjm-thumb-mv8lihto.jpg",
+      "added": "2026-10-14T21:02:06.771Z"
+    },
+    {
+      "id": "persian-0134d",
+      "name": "Persian",
+      "set": "",
+      "number": "42/64",
+      "notes": "",
+      "front": "images/cards/persian-0134d-front-mv8lihtx.jpg",
+      "thumb": "images/cards/persian-0134d-thumb-mv8lihtx.jpg",
+      "added": "2026-10-14T21:02:06.771Z"
+    },
+    {
+      "id": "magmar-y39rz",
+      "name": "Magmar",
+      "set": "",
+      "number": "36/102",
+      "notes": "",
+      "front": "images/cards/magmar-y39rz-front-mv8lihu6.jpg",
+      "thumb": "images/cards/magmar-y39rz-thumb-mv8lihu6.jpg",
+      "added": "2026-10-14T21:02:06.771Z"
+    },
+    {
+      "id": "rapidash-1oa1f",
+      "name": "Rapidash",
+      "set": "",
+      "number": "44/64",
+      "notes": "",
+      "front": "images/cards/rapidash-1oa1f-front-mv8lihuf.jpg",
+      "thumb": "images/cards/rapidash-1oa1f-thumb-mv8lihuf.jpg",
+      "added": "2026-10-14T21:02:06.771Z"
+    },
+    {
+      "id": "dark-machamp-9jel0",
+      "name": "Dark Machamp",
+      "set": "",
+      "number": "27/82",
+      "notes": "",
+      "front": "images/cards/dark-machamp-9jel0-front-mv8lihun.jpg",
+      "thumb": "images/cards/dark-machamp-9jel0-thumb-mv8lihun.jpg",
+      "added": "2026-10-14T21:02:06.771Z"
+    },
+    {
+      "id": "kabutops-nsq6j",
+      "name": "Kabutops",
+      "set": "",
+      "number": "24/62",
+      "notes": "",
+      "front": "images/cards/kabutops-nsq6j-front-mv8lihux.jpg",
+      "thumb": "images/cards/kabutops-nsq6j-thumb-mv8lihux.jpg",
+      "added": "2026-10-14T21:02:06.771Z"
+    },
+    {
+      "id": "dark-dragonite-26pln",
+      "name": "Dark Dragonite",
+      "set": "",
+      "number": "22/82",
+      "notes": "",
+      "front": "images/cards/dark-dragonite-26pln-front-mv8lihv5.jpg",
+      "thumb": "images/cards/dark-dragonite-26pln-thumb-mv8lihv5.jpg",
+      "added": "2026-10-14T21:02:06.771Z"
     }
   ]
 }
