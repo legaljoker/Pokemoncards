@@ -252,6 +252,39 @@
       "thumb": "images/cards/blaine-s-vulpix-4s0f1-thumb-mv8o432k.jpg",
       "added": "2026-10-14T22:14:52.612Z",
       "back": "images/cards/blaine-s-vulpix-4s0f1-back-mv8o433f.jpg"
+    },
+    {
+      "id": "koffing-japanese-i923m",
+      "name": "Koffing - Japanese",
+      "set": "",
+      "number": "110",
+      "notes": "Japanese",
+      "front": "images/cards/koffing-japanese-i923m-front-mv8pocgk.jpg",
+      "thumb": "images/cards/koffing-japanese-i923m-thumb-mv8pocgk.jpg",
+      "added": "2026-10-14T22:58:38.228Z",
+      "back": "images/cards/koffing-japanese-i923m-back-mv8pochm.jpg"
+    },
+    {
+      "id": "koga-s-zubat-t7z90",
+      "name": "Koga's Zubat",
+      "set": "",
+      "number": "83/132",
+      "notes": "",
+      "front": "images/cards/koga-s-zubat-t7z90-front-mv8pocio.jpg",
+      "thumb": "images/cards/koga-s-zubat-t7z90-thumb-mv8pocio.jpg",
+      "added": "2026-10-14T22:58:38.228Z",
+      "back": "images/cards/koga-s-zubat-t7z90-back-mv8pocjy.jpg"
+    },
+    {
+      "id": "jolteon-japanese-6wnj9",
+      "name": "Jolteon - Japanese",
+      "set": "",
+      "number": "135",
+      "notes": "Japanese",
+      "front": "images/cards/jolteon-japanese-6wnj9-front-mv8pocl0.jpg",
+      "thumb": "images/cards/jolteon-japanese-6wnj9-thumb-mv8pocl0.jpg",
+      "added": "2026-10-14T22:58:38.228Z",
+      "back": "images/cards/jolteon-japanese-6wnj9-back-mv8poe5r.jpg"
     }
   ]
 }
