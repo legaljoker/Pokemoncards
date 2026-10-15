@@ -351,6 +351,28 @@
       "thumb": "images/cards/venusaur-7eowl-thumb-mv8rmot6.jpg",
       "added": "2026-10-14T23:53:14.192Z",
       "back": "images/cards/venusaur-7eowl-back-mv8rmouc.jpg"
+    },
+    {
+      "id": "hypno-zgmky",
+      "name": "Hypno",
+      "set": "",
+      "number": "8/62",
+      "notes": "",
+      "front": "images/cards/hypno-zgmky-front-mv8s7zyv.jpg",
+      "thumb": "images/cards/hypno-zgmky-thumb-mv8s7zyv.jpg",
+      "added": "2026-10-15T00:09:54.391Z",
+      "back": "images/cards/hypno-zgmky-back-mv8s80gn.jpg"
+    },
+    {
+      "id": "light-togetic-ka06n",
+      "name": "Light Togetic",
+      "set": "",
+      "number": "15/105",
+      "notes": "",
+      "front": "images/cards/light-togetic-ka06n-front-mv8s80hi.jpg",
+      "thumb": "images/cards/light-togetic-ka06n-thumb-mv8s80hi.jpg",
+      "added": "2026-10-15T00:09:54.391Z",
+      "back": "images/cards/light-togetic-ka06n-back-mv8s80ib.jpg"
     }
   ]
 }
