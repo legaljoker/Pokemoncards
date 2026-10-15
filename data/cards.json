@@ -560,6 +560,28 @@
       "thumb": "images/cards/jolteon-obdyn-thumb-mv8tfb83.jpg",
       "added": "2026-10-15T00:43:14.470Z",
       "back": "images/cards/jolteon-obdyn-back-mv8tfct0.jpg"
+    },
+    {
+      "id": "eevee-xzapd",
+      "name": "Eevee",
+      "set": "",
+      "number": "55/82",
+      "notes": "",
+      "front": "images/cards/eevee-xzapd-front-mv8vhz07.jpg",
+      "thumb": "images/cards/eevee-xzapd-thumb-mv8vhz07.jpg",
+      "added": "2026-10-15T01:41:38.550Z",
+      "back": "images/cards/eevee-xzapd-back-mv8vhz1c.jpg"
+    },
+    {
+      "id": "growlithe-49z1s",
+      "name": "Growlithe",
+      "set": "",
+      "number": "28/102",
+      "notes": "",
+      "front": "images/cards/growlithe-49z1s-front-mv8vi0ts.jpg",
+      "thumb": "images/cards/growlithe-49z1s-thumb-mv8vi0ts.jpg",
+      "added": "2026-10-15T01:41:38.550Z",
+      "back": "images/cards/growlithe-49z1s-back-mv8vi6t0.jpg"
     }
   ]
 }
