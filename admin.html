@@ -40,7 +40,7 @@
             <input type="file" id="singleFiles" accept="image/*" multiple>
           </label>
         </div>
-        <label class="check"><input type="checkbox" id="autoOcr" checked> Try to read card names automatically</label>
+        <label class="check"><input type="checkbox" id="autoOcr" checked> Scan cards automatically (name, number, symbol, 1st Edition)</label>
       </div>
 
       <div class="box" id="splitBox" hidden>
@@ -72,7 +72,7 @@
 
       <div class="box" id="queueBox" hidden>
         <h2>3. Name your cards</h2>
-        <p class="help">Check each name (fix any the scanner got wrong), and remove empty pockets. Adding a back photo is optional — you can do it later from <b>Edit cards</b>.</p>
+        <p class="help">Check each card’s details (fix anything the scanner got wrong — blank means it couldn’t read it), and remove empty pockets. Adding a back photo is optional — you can do it later from <b>Edit cards</b>.</p>
         <div class="queue" id="queue"></div>
         <div class="sticky-save">
           <button class="btn primary" id="saveQueue">💾 Save to my site</button>
@@ -90,6 +90,9 @@
         <div class="btn-row">
           <input type="search" id="manageSearch" placeholder="Search…" style="flex:1;min-width:0;padding:10px 12px;border:1px solid var(--border);border-radius:8px;background:var(--surface-2)">
           <button class="btn" id="reloadManage">↻ Reload</button>
+        </div>
+        <div class="btn-row" style="margin-top:8px">
+          <button class="btn" id="scanAll">🔍 Scan cards for missing details</button>
         </div>
         <p class="status" id="manageLoadStatus"></p>
       </div>
@@ -127,6 +130,7 @@
   </main>
 
   <script src="js/common.js"></script>
+  <script src="js/scanner.js"></script>
   <script src="js/admin.js"></script>
 </body>
 </html>

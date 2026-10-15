@@ -2,7 +2,6 @@
 // GitHub repository with the GitHub API, so no server is needed.
 
 const $ = id => document.getElementById(id);
-const TESSERACT_URL = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
 const FRONT_MAX = 1400;   // longest side of saved full-size photos (px)
 const THUMB_MAX = 420;    // longest side of gallery thumbnails (px)
 const SOURCE_MAX = 4000;  // photos bigger than this are scaled down when loaded
@@ -213,171 +212,53 @@ function imagePath(id, kind) {
 }
 
 // ====================================================================
-// Name reading (OCR)
+// Card scanning (the reading itself lives in scanner.js)
 // ====================================================================
-let ocrWorkerPromise = null;
-let ocrChain = Promise.resolve();
-let pokemonNames = null;
+const SCAN_FIELDS = ['name', 'number', 'rarity', 'firstEdition'];
 
-function loadScript(src) {
-  return new Promise((resolve, reject) => {
-    const s = document.createElement('script');
-    s.src = src;
-    s.onload = resolve;
-    s.onerror = () => reject(new Error('Could not load ' + src));
-    document.head.appendChild(s);
-  });
+function setField(el, item, field, value) {
+  item[field] = value;
+  const inp = el.querySelector(`[data-f=${field}]`);
+  if (!inp) return;
+  if (inp.type === 'checkbox') inp.checked = !!value; else inp.value = value;
 }
 
-function getOcrWorker() {
-  if (!ocrWorkerPromise) {
-    ocrWorkerPromise = loadScript(TESSERACT_URL).then(() => Tesseract.createWorker('eng'));
-    ocrWorkerPromise.catch(() => { ocrWorkerPromise = null; });
-  }
-  return ocrWorkerPromise;
-}
-
-const SPECIAL_NAMES = {
-  'mr-mime': 'Mr. Mime', 'mime-jr': 'Mime Jr.', 'mr-rime': 'Mr. Rime', 'farfetchd': "Farfetch'd",
-  'sirfetchd': "Sirfetch'd", 'nidoran-f': 'Nidoran♀', 'nidoran-m': 'Nidoran♂', 'ho-oh': 'Ho-Oh',
-  'porygon-z': 'Porygon-Z', 'type-null': 'Type: Null', 'jangmo-o': 'Jangmo-o', 'hakamo-o': 'Hakamo-o',
-  'kommo-o': 'Kommo-o', 'flabebe': 'Flabébé',
-};
-
-async function getPokemonNames() {
-  if (pokemonNames) return pokemonNames;
-  let raw = null;
-  try { raw = JSON.parse(localStorage.getItem('pkc-names') || 'null'); } catch { }
-  if (!raw) {
-    try {
-      const res = await fetch('https://pokeapi.co/api/v2/pokemon-species?limit=2000');
-      raw = (await res.json()).results.map(r => r.name);
-      try { localStorage.setItem('pkc-names', JSON.stringify(raw)); } catch { }
-    } catch { raw = []; }
-  }
-  pokemonNames = raw.map(n => ({
-    display: SPECIAL_NAMES[n] || n.split('-').map(p => p[0].toUpperCase() + p.slice(1)).join(' '),
-    key: n.replace(/[^a-z]/g, ''),
-  }));
-  return pokemonNames;
-}
-
-function levenshtein(a, b) {
-  const prev = Array.from({ length: b.length + 1 }, (_, i) => i);
-  for (let i = 1; i <= a.length; i++) {
-    let diag = prev[0];
-    prev[0] = i;
-    for (let j = 1; j <= b.length; j++) {
-      const tmp = prev[j];
-      prev[j] = Math.min(prev[j] + 1, prev[j - 1] + 1, diag + (a[i - 1] === b[j - 1] ? 0 : 1));
-      diag = tmp;
-    }
-  }
-  return prev[b.length];
-}
-
-const PREFIXES = ['dark', 'light', 'shining', 'radiant', 'alolan', 'galarian', 'hisuian', 'paldean', 'mega', 'shadow'];
-const SUFFIXES = ['VMAX', 'VSTAR', 'V', 'GX', 'EX', 'ex', 'BREAK', 'LV.X', 'Prime', 'LEGEND', 'δ'];
-const ENERGY = /\b(grass|fire|water|lightning|psychic|fighting|darkness|metal|fairy|dragon|colorless)\s*energy\b/i;
-
-// Turn raw OCR text into the most likely card name.
-function guessName(text, names) {
-  const raw = text.split(/\s+/).filter(Boolean);
-  const keys = raw.map(t => t.toLowerCase().replace(/[^a-z]/g, ''));
-  let best = null; // { display, start, end, score }
-
-  for (let i = 0; i < keys.length; i++) {
-    // Try one word, and two/three words glued together (OCR sometimes splits names).
-    for (let span = 1; span <= 3 && i + span <= keys.length; span++) {
-      const k = keys.slice(i, i + span).join('');
-      if (k.length < 3) continue;
-      for (const n of names) {
-        if (Math.abs(n.key.length - k.length) > 2) continue;
-        let score;
-        if (n.key === k) score = 1 + n.key.length / 100; // exact; longer names win ties
-        else {
-          if (k.length < 5) continue;
-          score = 1 - levenshtein(k, n.key) / Math.max(k.length, n.key.length);
-        }
-        if (score >= 0.72 && (!best || score > best.score)) best = { display: n.display, start: i, end: i + span, score };
-      }
-    }
-  }
-
-  if (best) {
-    let name = best.display;
-    const before = raw[best.start - 1] || '';
-    const bk = before.toLowerCase().replace(/[^a-z']/g, '');
-    if (PREFIXES.includes(bk) || /^[a-z]+'s$/.test(bk)) name = before.replace(/[^A-Za-z']/g, '') + ' ' + name;
-    const after = (raw[best.end] || '').replace(/[^A-Za-z.δ]/g, '');
-    const suf = SUFFIXES.find(s => s === after || (s.length > 2 && s.toLowerCase() === after.toLowerCase()));
-    if (suf) name += ' ' + suf;
-    return name;
-  }
-  const energy = text.match(ENERGY);
-  if (energy) return energy[1][0].toUpperCase() + energy[1].slice(1).toLowerCase() + ' Energy';
-  return '';
-}
-
-// The name is printed along the top of the card; scan that strip first,
-// enlarged and in high-contrast grey to help the reader.
-function nameStrip(card, top, bottom, left, right) {
-  const x = card.width * left, y = card.height * top;
-  const w = card.width * (right - left), h = card.height * (bottom - top);
-  const scale = Math.max(1, 1200 / w);
-  const c = document.createElement('canvas');
-  c.width = Math.round(w * scale);
-  c.height = Math.round(h * scale);
-  const ctx = c.getContext('2d');
-  ctx.filter = 'grayscale(1) contrast(1.6)';
-  ctx.drawImage(card, x, y, w, h, 0, 0, c.width, c.height);
-  return c;
-}
-
-function readName(canvas, hintEl) {
-  const job = ocrChain.then(async () => {
-    hintEl.textContent = '🔍 Reading name…';
-    const [worker, names] = await Promise.all([getOcrWorker(), getPokemonNames()]);
-    const regions = [
-      [0.02, 0.14, 0.03, 0.75],  // modern & classic cards: name top-left
-      [0.00, 0.22, 0.00, 1.00],  // wider fallback
-      [0.00, 1.00, 0.00, 1.00],  // whole card as a last resort
-    ];
-    let firstLine = '';
-    for (const r of regions) {
-      const { data } = await worker.recognize(nameStrip(canvas, ...r));
-      const guess = guessName(data.text, names);
-      if (guess) return guess;
-      if (!firstLine) firstLine = (data.text.split('\n').map(l => l.replace(/[^A-Za-z' .-]/g, '').trim()).find(l => l.length >= 3) || '');
-    }
-    return firstLine ? { unsure: firstLine } : null;
-  });
-  ocrChain = job.catch(() => { });
-  return job;
-}
-
-async function autoName(item, el) {
-  const nameInput = el.querySelector('[data-f=name]');
+// Scan a card photo and fill in what was found. With onlyBlank, fields
+// that already have something in them are left alone.
+async function applyScan(canvas, item, el, { onlyBlank = false, onChange } = {}) {
   const hint = el.querySelector('.ocr-hint');
   try {
-    const result = await readName(item.front, hint);
+    const r = await scanCard(canvas, msg => { hint.textContent = msg; });
     if (!el.isConnected) return;
-    if (nameInput.value.trim()) { hint.textContent = ''; return; } // user already typed one
-    if (typeof result === 'string') {
-      nameInput.value = result;
-      item.name = result;
-      hint.textContent = '✔ Name read from photo — check it';
-    } else if (result?.unsure) {
-      nameInput.value = result.unsure;
-      item.name = result.unsure;
-      hint.textContent = '⚠ Not sure about this one — please check';
-    } else {
-      hint.textContent = 'Could not read the name — please type it';
-    }
+    const notes = [];
+    const fill = (field, value) => {
+      if (!value) return false;
+      if (onlyBlank && item[field]) return false;
+      setField(el, item, field, value);
+      return true;
+    };
+    if (r.name && fill('name', r.name.name)) notes.push(r.name.sure ? '✔ name' : '⚠ name — please check');
+    else if (!item.name) notes.push('✖ name not read — please type it');
+    if (fill('number', r.number)) notes.push('✔ number');
+    else if (!item.number) notes.push('✖ number not read');
+    if (fill('rarity', r.rarity)) notes.push('✔ symbol');
+    else if (!item.rarity) notes.push('✖ symbol not read — pick it');
+    if (r.firstEdition && fill('firstEdition', true)) notes.push('✔ 1st Edition stamp');
+    hint.textContent = notes.join(' · ') + (notes.some(n => n.startsWith('✔')) ? ' — please double-check' : '');
+    onChange?.();
   } catch (e) {
-    hint.textContent = 'Name reader unavailable — please type it';
+    hint.textContent = 'Scanner unavailable — please type the details';
     console.error(e);
   }
+}
+
+function loadUrlToCanvas(url) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve(scaledCanvas(img, SOURCE_MAX, img.naturalWidth, img.naturalHeight));
+    img.onerror = () => reject(new Error('Could not load ' + url + ' (if you just saved it, wait a minute)'));
+    img.src = url;
+  });
 }
 
 // ====================================================================
@@ -491,13 +372,18 @@ $('singleFiles').addEventListener('change', async e => {
 const queue = [];
 
 function itemFieldsHtml(item) {
+  const opt = (v, label) => `<option value="${v}" ${item.rarity === v ? 'selected' : ''}>${label}</option>`;
   return `
     <input data-f="name" placeholder="Card name (e.g. Pikachu)" value="${escapeHtml(item.name)}" autocapitalize="words">
     <div class="ocr-hint"></div>
     <div class="row2">
-      <input data-f="set" placeholder="Set (optional)" value="${escapeHtml(item.set)}">
-      <input data-f="number" placeholder="No." value="${escapeHtml(item.number)}" style="max-width:80px">
+      <input data-f="number" placeholder="No. (e.g. 51/111)" value="${escapeHtml(item.number)}" inputmode="numeric">
+      <select data-f="rarity" aria-label="Rarity symbol">
+        ${opt('', 'Symbol?')}${opt('common', '● Common')}${opt('uncommon', '◆ Uncommon')}${opt('rare', '★ Rare')}${opt('promo', '★ Promo')}
+      </select>
     </div>
+    <label class="check small-check"><input type="checkbox" data-f="firstEdition" ${item.firstEdition ? 'checked' : ''}> 1st Edition</label>
+    <input data-f="set" placeholder="Set (optional)" value="${escapeHtml(item.set)}">
     <input data-f="notes" placeholder="Notes (optional)" value="${escapeHtml(item.notes)}">`;
 }
 
@@ -507,10 +393,13 @@ function thumbsHtml(frontSrc, backSrc) {
 }
 
 function bindFields(el, item, onChange) {
-  el.querySelectorAll('[data-f]').forEach(inp => inp.addEventListener('input', () => {
-    item[inp.dataset.f] = inp.value;
-    onChange?.();
-  }));
+  el.querySelectorAll('[data-f]').forEach(inp => {
+    const ev = inp.type === 'checkbox' || inp.tagName === 'SELECT' ? 'change' : 'input';
+    inp.addEventListener(ev, () => {
+      item[inp.dataset.f] = inp.type === 'checkbox' ? inp.checked : inp.value;
+      onChange?.();
+    });
+  });
 }
 
 function setBackThumb(el, src) {
@@ -521,7 +410,7 @@ function setBackThumb(el, src) {
 }
 
 function addToQueue(canvas) {
-  const item = { front: canvas, back: null, name: '', set: '', number: '', notes: '' };
+  const item = { front: canvas, back: null, name: '', set: '', number: '', rarity: '', firstEdition: false, notes: '' };
   queue.push(item);
   const el = document.createElement('div');
   el.className = 'qi';
@@ -530,7 +419,7 @@ function addToQueue(canvas) {
     <div class="fields">
       ${itemFieldsHtml(item)}
       <div class="btn-row">
-        <button class="btn small" data-a="ocr">🔍 Read name</button>
+        <button class="btn small" data-a="ocr">🔍 Scan again</button>
         <label class="btn small file-btn">Add back<input type="file" accept="image/*"></label>
         <button class="btn small" data-a="rotate">⟳</button>
         <button class="btn small danger" data-a="remove">Remove</button>
@@ -538,9 +427,8 @@ function addToQueue(canvas) {
     </div>`;
   bindFields(el, item);
   el.querySelector('[data-a=ocr]').addEventListener('click', () => {
-    el.querySelector('[data-f=name]').value = '';
-    item.name = '';
-    autoName(item, el);
+    SCAN_FIELDS.forEach(f => setField(el, item, f, f === 'firstEdition' ? false : ''));
+    applyScan(item.front, item, el);
   });
   el.querySelector('[data-a=rotate]').addEventListener('click', () => {
     item.front = rotateCanvas(item.front);
@@ -560,7 +448,7 @@ function addToQueue(canvas) {
   });
   $('queue').appendChild(el);
   updateQueueBox();
-  if ($('autoOcr').checked) autoName(item, el);
+  if ($('autoOcr').checked) applyScan(item.front, item, el, { onlyBlank: true });
 }
 
 function updateQueueBox() {
@@ -594,6 +482,8 @@ $('saveQueue').addEventListener('click', async () => {
         name: item.name.trim(),
         set: item.set.trim(),
         number: item.number.trim(),
+        rarity: item.rarity,
+        firstEdition: !!item.firstEdition,
         notes: item.notes.trim(),
         front: imagePath(id, 'front'),
         thumb: imagePath(id, 'thumb'),
@@ -644,9 +534,11 @@ async function loadManage() {
   }
 }
 
+const EDIT_FIELDS = ['name', 'set', 'number', 'rarity', 'firstEdition', 'notes'];
+
 function isDirty(m) {
   return m.deleted || m.newFront || m.newBack || m.removeBack ||
-    ['name', 'set', 'number', 'notes'].some(f => (m.edit[f] || '') !== (m.card[f] || ''));
+    EDIT_FIELDS.some(f => (m.edit[f] || '') !== (m.card[f] || ''));
 }
 
 function manageItemEl(m) {
@@ -661,11 +553,14 @@ function manageItemEl(m) {
         <label class="btn small file-btn">Front photo<input type="file" accept="image/*" data-side="front"></label>
         <label class="btn small file-btn">Back photo<input type="file" accept="image/*" data-side="back"></label>
         <button class="btn small" data-a="noback" ${m.card.back ? '' : 'hidden'}>Remove back</button>
+        <button class="btn small" data-a="scan">🔍 Scan</button>
         <button class="btn small danger" data-a="delete">Delete</button>
       </div>
     </div>`;
   const mark = () => el.classList.toggle('dirty', !!isDirty(m));
+  m.mark = mark;
   bindFields(el, m.edit, mark);
+  el.querySelector('[data-a=scan]').addEventListener('click', () => scanManaged(m, false));
   el.querySelectorAll('input[type=file]').forEach(inp => inp.addEventListener('change', async e => {
     const f = e.target.files[0];
     e.target.value = '';
@@ -697,6 +592,31 @@ function manageItemEl(m) {
   });
   return el;
 }
+
+// Scan a saved card; only blank details are filled in.
+async function scanManaged(m) {
+  const hint = m.el.querySelector('.ocr-hint');
+  try {
+    hint.textContent = 'Loading photo…';
+    const canvas = m.newFront || await loadUrlToCanvas(m.card.front);
+    await applyScan(canvas, m.edit, m.el, { onlyBlank: true, onChange: m.mark });
+  } catch (e) {
+    hint.textContent = '✖ ' + e.message;
+  }
+}
+
+$('scanAll').addEventListener('click', async () => {
+  const todo = manageCards.filter(m => !m.deleted && (!m.edit.name || !m.edit.number || !m.edit.rarity));
+  if (!todo.length) { setStatus($('manageLoadStatus'), 'Every card already has a name, number and symbol.'); return; }
+  if (!confirm(`Scan ${todo.length} card(s) that are missing a name, number or symbol? Only blank details get filled in. This can take a few minutes.`)) return;
+  $('scanAll').disabled = true;
+  for (const [i, m] of todo.entries()) {
+    setStatus($('manageLoadStatus'), `Scanning ${i + 1} of ${todo.length}…`);
+    await scanManaged(m);
+  }
+  $('scanAll').disabled = false;
+  setStatus($('manageLoadStatus'), `Done. Check the highlighted cards, then tap “Save changes”.`, 'ok');
+});
 
 function filterManage() {
   const q = $('manageSearch').value;
@@ -732,6 +652,8 @@ $('saveManage').addEventListener('click', async () => {
         continue;
       }
       for (const f of ['name', 'set', 'number', 'notes']) c[f] = (m.edit[f] || '').trim();
+      c.rarity = m.edit.rarity || '';
+      c.firstEdition = !!m.edit.firstEdition;
       if (m.newFront) {
         removeFile(c.front); removeFile(c.thumb);
         c.front = imagePath(c.id, 'front');

@@ -14,13 +14,14 @@
     {
       "id": "togepi-w6t9a",
       "name": "Togepi",
-      "set": "1st Edition",
+      "set": "",
       "number": "51/111",
       "notes": "",
       "front": "images/cards/togepi-w6t9a-front-mv8m7c6t.jpg",
       "thumb": "images/cards/togepi-w6t9a-thumb-mv8m7c6t.jpg",
       "added": "2026-10-14T21:21:25.877Z",
-      "back": "images/cards/togepi-w6t9a-back-mv8m7ceu.jpg"
+      "back": "images/cards/togepi-w6t9a-back-mv8m7ceu.jpg",
+      "firstEdition": true
     },
     {
       "id": "haunter-ru669",

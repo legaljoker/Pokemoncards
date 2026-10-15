@@ -4,6 +4,7 @@ const els = {
   empty: document.getElementById('empty'),
   search: document.getElementById('search'),
   sort: document.getElementById('sort'),
+  filter: document.getElementById('filter'),
   viewer: document.getElementById('viewer'),
   stage: document.getElementById('vStage'),
   flipper: document.getElementById('vFlipper'),
@@ -40,9 +41,12 @@ async function load() {
 
 function render() {
   const q = els.search.value.trim();
-  shown = allCards.filter(c => cardMatches(c, q));
+  const f = els.filter.value;
+  shown = allCards.filter(c => cardMatches(c, q) &&
+    (!f || (f === 'first' ? c.firstEdition : f === 'back' ? c.back : c.rarity === f)));
   const sort = els.sort.value;
   if (sort === 'name') shown.sort((a, b) => (a.name || '').localeCompare(b.name || '', undefined, { numeric: true }));
+  else if (sort === 'number') shown.sort((a, b) => (parseInt(a.number) || 9999) - (parseInt(b.number) || 9999) || (a.number || '').localeCompare(b.number || ''));
   else if (sort === 'new') shown.sort((a, b) => (b.added || '').localeCompare(a.added || ''));
   else shown.sort((a, b) => (a.added || '').localeCompare(b.added || ''));
 
@@ -50,16 +54,17 @@ function render() {
     <button class="card-tile" data-i="${i}">
       <div class="img-wrap"><img loading="lazy" src="${escapeHtml(c.thumb || c.front)}" alt="${escapeHtml(c.name)}"></div>
       ${c.back ? '<span class="badge">↻ back</span>' : ''}
+      ${c.firstEdition ? '<span class="badge badge-left">1st Ed.</span>' : ''}
       <div class="name">${escapeHtml(c.name || 'Unnamed card')}</div>
       <div class="sub">${escapeHtml(cardSubtitle(c)) || '&nbsp;'}</div>
     </button>`).join('');
 
   els.count.textContent = allCards.length
-    ? (q ? `${shown.length} of ${allCards.length} cards` : `${allCards.length} cards`)
+    ? (q || els.filter.value ? `${shown.length} of ${allCards.length} cards` : `${allCards.length} cards`)
     : '';
   els.empty.hidden = shown.length > 0;
   els.empty.textContent = allCards.length
-    ? `No cards match “${q}”.`
+    ? 'No cards match your search.'
     : 'No cards yet. Tap “＋ Add” to upload your first ones.';
 }
 
@@ -69,6 +74,7 @@ els.grid.addEventListener('click', e => {
 });
 els.search.addEventListener('input', render);
 els.sort.addEventListener('change', render);
+els.filter.addEventListener('change', render);
 
 // ---------- Viewer ----------
 function openViewer(i) {
