@@ -626,6 +626,72 @@
       "thumb": "images/cards/rapidash-7x78w-thumb-mv8ypj2m.jpg",
       "added": "2026-10-15T03:11:26.914Z",
       "back": "images/cards/rapidash-7x78w-back-mv8ypknt.jpg"
+    },
+    {
+      "id": "sandshrew-6emif",
+      "name": "Sandshrew",
+      "set": "",
+      "number": "62/102",
+      "notes": "",
+      "front": "images/cards/sandshrew-6emif-front-mv8z6evo.jpg",
+      "thumb": "images/cards/sandshrew-6emif-thumb-mv8z6evo.jpg",
+      "added": "2026-10-15T03:24:37.716Z",
+      "back": "images/cards/sandshrew-6emif-back-mv8z6f69.jpg"
+    },
+    {
+      "id": "pikachu-p9uy8",
+      "name": "Pikachu",
+      "set": "",
+      "number": "6/10",
+      "notes": "",
+      "front": "images/cards/pikachu-p9uy8-front-mv8z6f7i.jpg",
+      "thumb": "images/cards/pikachu-p9uy8-thumb-mv8z6f7i.jpg",
+      "added": "2026-10-15T03:24:37.716Z",
+      "back": "images/cards/pikachu-p9uy8-back-mv8z6f8p.jpg"
+    },
+    {
+      "id": "ponyta-r5nwf",
+      "name": "Ponyta",
+      "set": "",
+      "number": "60/102",
+      "notes": "",
+      "front": "images/cards/ponyta-r5nwf-front-mv8z6f9t.jpg",
+      "thumb": "images/cards/ponyta-r5nwf-thumb-mv8z6f9t.jpg",
+      "added": "2026-10-15T03:24:37.716Z",
+      "back": "images/cards/ponyta-r5nwf-back-mv8z6far.jpg"
+    },
+    {
+      "id": "zubat-s7gdt",
+      "name": "Zubat",
+      "set": "",
+      "number": "59/64",
+      "notes": "",
+      "front": "images/cards/zubat-s7gdt-front-mv8z6fbm.jpg",
+      "thumb": "images/cards/zubat-s7gdt-thumb-mv8z6fbm.jpg",
+      "added": "2026-10-15T03:24:37.716Z",
+      "back": "images/cards/zubat-s7gdt-back-mv8z6fcm.jpg"
+    },
+    {
+      "id": "pikachu-r6kqc",
+      "name": "Pikachu",
+      "set": "Promo",
+      "number": "27",
+      "notes": "",
+      "front": "images/cards/pikachu-r6kqc-front-mv8z6fdk.jpg",
+      "thumb": "images/cards/pikachu-r6kqc-thumb-mv8z6fdk.jpg",
+      "added": "2026-10-15T03:24:37.716Z",
+      "back": "images/cards/pikachu-r6kqc-back-mv8z6fsm.jpg"
+    },
+    {
+      "id": "pikachu-im4j6",
+      "name": "Pikachu",
+      "set": "",
+      "number": "58/102",
+      "notes": "",
+      "front": "images/cards/pikachu-im4j6-front-mv8z6ftb.jpg",
+      "thumb": "images/cards/pikachu-im4j6-thumb-mv8z6ftb.jpg",
+      "added": "2026-10-15T03:24:37.716Z",
+      "back": "images/cards/pikachu-im4j6-back-mv8z6fua.jpg"
     }
   ]
 }
