@@ -395,6 +395,171 @@
       "thumb": "images/cards/magmar-vlhv2-thumb-mv8sg1ld.jpg",
       "added": "2026-10-15T00:16:06.670Z",
       "back": "images/cards/magmar-vlhv2-back-mv8sg366.jpg"
+    },
+    {
+      "id": "nidoqueen-5df2q",
+      "name": "Nidoqueen",
+      "set": "",
+      "number": "12/130",
+      "notes": "",
+      "front": "images/cards/nidoqueen-5df2q-front-mv8tev8m.jpg",
+      "thumb": "images/cards/nidoqueen-5df2q-thumb-mv8tev8m.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/nidoqueen-5df2q-back-mv8tevq8.jpg"
+    },
+    {
+      "id": "murkrow-3p7re",
+      "name": "Murkrow",
+      "set": "",
+      "number": "46/64",
+      "notes": "",
+      "front": "images/cards/murkrow-3p7re-front-mv8tevst.jpg",
+      "thumb": "images/cards/murkrow-3p7re-thumb-mv8tevst.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/murkrow-3p7re-back-mv8tevu5.jpg"
+    },
+    {
+      "id": "ninetales-x0pww",
+      "name": "Ninetales",
+      "set": "",
+      "number": "12/102",
+      "notes": "",
+      "front": "images/cards/ninetales-x0pww-front-mv8tewn0.jpg",
+      "thumb": "images/cards/ninetales-x0pww-thumb-mv8tewn0.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/ninetales-x0pww-back-mv8tey7s.jpg"
+    },
+    {
+      "id": "charmander-mcxfr",
+      "name": "Charmander",
+      "set": "",
+      "number": "50/82",
+      "notes": "",
+      "front": "images/cards/charmander-mcxfr-front-mv8tez0w.jpg",
+      "thumb": "images/cards/charmander-mcxfr-thumb-mv8tez0w.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/charmander-mcxfr-back-mv8tf0m5.jpg"
+    },
+    {
+      "id": "raichu-tgo28",
+      "name": "Raichu",
+      "set": "",
+      "number": "14/102",
+      "notes": "",
+      "front": "images/cards/raichu-tgo28-front-mv8tf1ev.jpg",
+      "thumb": "images/cards/raichu-tgo28-thumb-mv8tf1ev.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/raichu-tgo28-back-mv8tf305.jpg"
+    },
+    {
+      "id": "kingdra-b76ai",
+      "name": "Kingdra",
+      "set": "",
+      "number": "8/111",
+      "notes": "",
+      "front": "images/cards/kingdra-b76ai-front-mv8tf3t9.jpg",
+      "thumb": "images/cards/kingdra-b76ai-thumb-mv8tf3t9.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/kingdra-b76ai-back-mv8tf5ee.jpg"
+    },
+    {
+      "id": "dark-vaporeon-y06m7",
+      "name": "Dark Vaporeon",
+      "set": "",
+      "number": "45/82",
+      "notes": "",
+      "front": "images/cards/dark-vaporeon-y06m7-front-mv8tf67i.jpg",
+      "thumb": "images/cards/dark-vaporeon-y06m7-thumb-mv8tf67i.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/dark-vaporeon-y06m7-back-mv8tf78v.jpg"
+    },
+    {
+      "id": "koga-s-kakuna-kro2q",
+      "name": "Koga's Kakuna",
+      "set": "",
+      "number": "47/132",
+      "notes": "",
+      "front": "images/cards/koga-s-kakuna-kro2q-front-mv8tf81z.jpg",
+      "thumb": "images/cards/koga-s-kakuna-kro2q-thumb-mv8tf81z.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/koga-s-kakuna-kro2q-back-mv8tf9mt.jpg"
+    },
+    {
+      "id": "sabrina-s-kadabra-u3cn6",
+      "name": "Sabrina's Kadabra",
+      "set": "",
+      "number": "58/132",
+      "notes": "",
+      "front": "images/cards/sabrina-s-kadabra-u3cn6-front-mv8tf9vo.jpg",
+      "thumb": "images/cards/sabrina-s-kadabra-u3cn6-thumb-mv8tf9vo.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/sabrina-s-kadabra-u3cn6-back-mv8tf9wv.jpg"
+    },
+    {
+      "id": "skitty-heax3",
+      "name": "Skitty",
+      "set": "",
+      "number": "6/10",
+      "notes": "",
+      "front": "images/cards/skitty-heax3-front-mv8tf9xw.jpg",
+      "thumb": "images/cards/skitty-heax3-thumb-mv8tf9xw.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/skitty-heax3-back-mv8tf9z5.jpg"
+    },
+    {
+      "id": "eevee-l5brg",
+      "name": "Eevee",
+      "set": "",
+      "number": "55/82",
+      "notes": "",
+      "front": "images/cards/eevee-l5brg-front-mv8tfa06.jpg",
+      "thumb": "images/cards/eevee-l5brg-thumb-mv8tfa06.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/eevee-l5brg-back-mv8tfa1a.jpg"
+    },
+    {
+      "id": "exeggcute-3n7g1",
+      "name": "Exeggcute",
+      "set": "",
+      "number": "52/64",
+      "notes": "",
+      "front": "images/cards/exeggcute-3n7g1-front-mv8tfa2a.jpg",
+      "thumb": "images/cards/exeggcute-3n7g1-thumb-mv8tfa2a.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/exeggcute-3n7g1-back-mv8tfa3k.jpg"
+    },
+    {
+      "id": "raticate-fva6a",
+      "name": "Raticate",
+      "set": "",
+      "number": "58/130",
+      "notes": "",
+      "front": "images/cards/raticate-fva6a-front-mv8tfa4l.jpg",
+      "thumb": "images/cards/raticate-fva6a-thumb-mv8tfa4l.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/raticate-fva6a-back-mv8tfa5p.jpg"
+    },
+    {
+      "id": "arcanine-8bz9y",
+      "name": "Arcanine",
+      "set": "",
+      "number": "23/102",
+      "notes": "",
+      "front": "images/cards/arcanine-8bz9y-front-mv8tfa6o.jpg",
+      "thumb": "images/cards/arcanine-8bz9y-thumb-mv8tfa6o.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/arcanine-8bz9y-back-mv8tfaf1.jpg"
+    },
+    {
+      "id": "jolteon-obdyn",
+      "name": "Jolteon",
+      "set": "",
+      "number": "20/64",
+      "notes": "",
+      "front": "images/cards/jolteon-obdyn-front-mv8tfb83.jpg",
+      "thumb": "images/cards/jolteon-obdyn-thumb-mv8tfb83.jpg",
+      "added": "2026-10-15T00:43:14.470Z",
+      "back": "images/cards/jolteon-obdyn-back-mv8tfct0.jpg"
     }
   ]
 }
