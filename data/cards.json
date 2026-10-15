@@ -814,6 +814,19 @@
       "back": "images/cards/pikachu-im4j6-back-mv8z6fua.jpg",
       "rarity": "common",
       "firstEdition": false
+    },
+    {
+      "id": "pikachu-uqhpu",
+      "name": "Pikachu",
+      "set": "",
+      "number": "60/64",
+      "rarity": "common",
+      "firstEdition": false,
+      "notes": "",
+      "front": "images/cards/pikachu-uqhpu-front-mv94jegk.jpg",
+      "thumb": "images/cards/pikachu-uqhpu-thumb-mv94jegk.jpg",
+      "added": "2026-10-15T05:54:41.780Z",
+      "back": "images/cards/pikachu-uqhpu-back-mv94jehc.jpg"
     }
   ]
 }
