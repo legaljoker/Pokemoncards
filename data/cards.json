@@ -582,6 +582,28 @@
       "thumb": "images/cards/growlithe-49z1s-thumb-mv8vi0ts.jpg",
       "added": "2026-10-15T01:41:38.550Z",
       "back": "images/cards/growlithe-49z1s-back-mv8vi6t0.jpg"
+    },
+    {
+      "id": "sandslash-wm47o",
+      "name": "Sandslash",
+      "set": "",
+      "number": "41/62",
+      "notes": "",
+      "front": "images/cards/sandslash-wm47o-front-mv8w6xqe.jpg",
+      "thumb": "images/cards/sandslash-wm47o-thumb-mv8w6xqe.jpg",
+      "added": "2026-10-15T02:01:03.302Z",
+      "back": "images/cards/sandslash-wm47o-back-mv8w6ymi.jpg"
+    },
+    {
+      "id": "pikachu-erqhr",
+      "name": "Pikachu",
+      "set": "",
+      "number": "60/64",
+      "notes": "",
+      "front": "images/cards/pikachu-erqhr-front-mv8w6zf6.jpg",
+      "thumb": "images/cards/pikachu-erqhr-thumb-mv8w6zf6.jpg",
+      "added": "2026-10-15T02:01:03.302Z",
+      "back": "images/cards/pikachu-erqhr-back-mv8w710f.jpg"
     }
   ]
 }
