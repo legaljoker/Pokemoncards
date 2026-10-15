@@ -1750,6 +1750,84 @@
       "thumb": "images/cards/koga-s-tangela-ei83r-thumb-mv98u5ck.jpg",
       "added": "2026-10-15T07:54:46.546Z",
       "back": "images/cards/koga-s-tangela-ei83r-back-mv98u5fq.jpg"
+    },
+    {
+      "id": "pikachu-19bm9",
+      "name": "Pikachu",
+      "set": "",
+      "number": "86/110",
+      "rarity": "common",
+      "firstEdition": false,
+      "notes": "",
+      "front": "images/cards/pikachu-19bm9-front-mv995p8f.jpg",
+      "thumb": "images/cards/pikachu-19bm9-thumb-mv995p8f.jpg",
+      "added": "2026-10-15T08:04:00.639Z",
+      "back": "images/cards/pikachu-19bm9-back-mv995p9d.jpg"
+    },
+    {
+      "id": "snow-cloud-castform-9pm28",
+      "name": "Snow-cloud Castform",
+      "set": "",
+      "number": "25/101",
+      "rarity": "rare",
+      "firstEdition": false,
+      "notes": "",
+      "front": "images/cards/snow-cloud-castform-9pm28-front-mv995pa7.jpg",
+      "thumb": "images/cards/snow-cloud-castform-9pm28-thumb-mv995pa7.jpg",
+      "added": "2026-10-15T08:04:00.639Z",
+      "back": "images/cards/snow-cloud-castform-9pm28-back-mv995pb6.jpg"
+    },
+    {
+      "id": "eevee-3k244",
+      "name": "Eevee",
+      "set": "",
+      "number": "51/64",
+      "rarity": "common",
+      "firstEdition": false,
+      "notes": "",
+      "front": "images/cards/eevee-3k244-front-mv995pc0.jpg",
+      "thumb": "images/cards/eevee-3k244-thumb-mv995pc0.jpg",
+      "added": "2026-10-15T08:04:00.639Z",
+      "back": "images/cards/eevee-3k244-back-mv995pd2.jpg"
+    },
+    {
+      "id": "spearow-m1zl3",
+      "name": "Spearow",
+      "set": "",
+      "number": "62/64",
+      "rarity": "common",
+      "firstEdition": false,
+      "notes": "",
+      "front": "images/cards/spearow-m1zl3-front-mv995pdw.jpg",
+      "thumb": "images/cards/spearow-m1zl3-thumb-mv995pdw.jpg",
+      "added": "2026-10-15T08:04:00.639Z",
+      "back": "images/cards/spearow-m1zl3-back-mv995pew.jpg"
+    },
+    {
+      "id": "pikachu-9hpyd",
+      "name": "Pikachu",
+      "set": "",
+      "number": "6/10",
+      "rarity": "",
+      "firstEdition": false,
+      "notes": "",
+      "front": "images/cards/pikachu-9hpyd-front-mv995pfj.jpg",
+      "thumb": "images/cards/pikachu-9hpyd-thumb-mv995pfj.jpg",
+      "added": "2026-10-15T08:04:00.639Z",
+      "back": "images/cards/pikachu-9hpyd-back-mv995pgq.jpg"
+    },
+    {
+      "id": "rhyhorn-french-61cwh",
+      "name": "Rhyhorn - French",
+      "set": "",
+      "number": "61/64",
+      "rarity": "common",
+      "firstEdition": false,
+      "notes": "French",
+      "front": "images/cards/rhyhorn-french-61cwh-front-mv995phl.jpg",
+      "thumb": "images/cards/rhyhorn-french-61cwh-thumb-mv995phl.jpg",
+      "added": "2026-10-15T08:04:00.639Z",
+      "back": "images/cards/rhyhorn-french-61cwh-back-mv995pll.jpg"
     }
   ]
 }
