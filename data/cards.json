@@ -604,6 +604,28 @@
       "thumb": "images/cards/pikachu-erqhr-thumb-mv8w6zf6.jpg",
       "added": "2026-10-15T02:01:03.302Z",
       "back": "images/cards/pikachu-erqhr-back-mv8w710f.jpg"
+    },
+    {
+      "id": "golbat-2t3op",
+      "name": "Golbat",
+      "set": "",
+      "number": "34/62",
+      "notes": "",
+      "front": "images/cards/golbat-2t3op-front-mv8ypgoy.jpg",
+      "thumb": "images/cards/golbat-2t3op-thumb-mv8ypgoy.jpg",
+      "added": "2026-10-15T03:11:26.914Z",
+      "back": "images/cards/golbat-2t3op-back-mv8ypi9y.jpg"
+    },
+    {
+      "id": "rapidash-7x78w",
+      "name": "Rapidash",
+      "set": "",
+      "number": "44/64",
+      "notes": "",
+      "front": "images/cards/rapidash-7x78w-front-mv8ypj2m.jpg",
+      "thumb": "images/cards/rapidash-7x78w-thumb-mv8ypj2m.jpg",
+      "added": "2026-10-15T03:11:26.914Z",
+      "back": "images/cards/rapidash-7x78w-back-mv8ypknt.jpg"
     }
   ]
 }
