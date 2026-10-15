@@ -9,7 +9,9 @@
       "front": "images/cards/psyduck-ywzg5-front-mv8m4av9.jpg",
       "thumb": "images/cards/psyduck-ywzg5-thumb-mv8m4av9.jpg",
       "added": "2026-10-14T21:19:04.197Z",
-      "back": "images/cards/psyduck-ywzg5-back-mv8m4ba3.jpg"
+      "back": "images/cards/psyduck-ywzg5-back-mv8m4ba3.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "togepi-w6t9a",
@@ -21,18 +23,21 @@
       "thumb": "images/cards/togepi-w6t9a-thumb-mv8m7c6t.jpg",
       "added": "2026-10-14T21:21:25.877Z",
       "back": "images/cards/togepi-w6t9a-back-mv8m7ceu.jpg",
-      "firstEdition": true
+      "firstEdition": true,
+      "rarity": "uncommon"
     },
     {
       "id": "haunter-ru669",
-      "name": "Haunter",
+      "name": "Gengar",
       "set": "",
       "number": "5/62",
       "notes": "Holofoil",
       "front": "images/cards/haunter-ru669-front-mv8mboyx.jpg",
       "thumb": "images/cards/haunter-ru669-thumb-mv8mboyx.jpg",
       "added": "2026-10-14T21:24:49.065Z",
-      "back": "images/cards/haunter-ru669-back-mv8mbpht.jpg"
+      "back": "images/cards/haunter-ru669-back-mv8mbpht.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "wobbuffet-ez9fc",
@@ -43,7 +48,9 @@
       "front": "images/cards/wobbuffet-ez9fc-front-mv8mny1z.jpg",
       "thumb": "images/cards/wobbuffet-ez9fc-thumb-mv8mny1z.jpg",
       "added": "2026-10-14T21:34:20.711Z",
-      "back": "images/cards/wobbuffet-ez9fc-back-mv8mny2w.jpg"
+      "back": "images/cards/wobbuffet-ez9fc-back-mv8mny2w.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "dark-gyarados-ussjn",
@@ -54,7 +61,9 @@
       "front": "images/cards/dark-gyarados-ussjn-front-mv8mny3k.jpg",
       "thumb": "images/cards/dark-gyarados-ussjn-thumb-mv8mny3k.jpg",
       "added": "2026-10-14T21:34:20.711Z",
-      "back": "images/cards/dark-gyarados-ussjn-back-mv8mny5g.jpg"
+      "back": "images/cards/dark-gyarados-ussjn-back-mv8mny5g.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "groudon-ex-pfpvu",
@@ -65,7 +74,9 @@
       "front": "images/cards/groudon-ex-pfpvu-front-mv8mny65.jpg",
       "thumb": "images/cards/groudon-ex-pfpvu-thumb-mv8mny65.jpg",
       "added": "2026-10-14T21:34:20.711Z",
-      "back": "images/cards/groudon-ex-pfpvu-back-mv8mny72.jpg"
+      "back": "images/cards/groudon-ex-pfpvu-back-mv8mny72.jpg",
+      "rarity": "promo",
+      "firstEdition": false
     },
     {
       "id": "marill-eyfyv",
@@ -76,7 +87,9 @@
       "front": "images/cards/marill-eyfyv-front-mv8mny7w.jpg",
       "thumb": "images/cards/marill-eyfyv-thumb-mv8mny7w.jpg",
       "added": "2026-10-14T21:34:20.711Z",
-      "back": "images/cards/marill-eyfyv-back-mv8mny8r.jpg"
+      "back": "images/cards/marill-eyfyv-back-mv8mny8r.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "clefairy-20fpg",
@@ -87,7 +100,9 @@
       "front": "images/cards/clefairy-20fpg-front-mv8mny9f.jpg",
       "thumb": "images/cards/clefairy-20fpg-thumb-mv8mny9f.jpg",
       "added": "2026-10-14T21:34:20.711Z",
-      "back": "images/cards/clefairy-20fpg-back-mv8mnyar.jpg"
+      "back": "images/cards/clefairy-20fpg-back-mv8mnyar.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "sabrina-porygon-ody8k",
@@ -98,18 +113,22 @@
       "front": "images/cards/sabrina-porygon-ody8k-front-mv8mzxht.jpg",
       "thumb": "images/cards/sabrina-porygon-ody8k-thumb-mv8mzxht.jpg",
       "added": "2026-10-14T21:43:39.857Z",
-      "back": "images/cards/sabrina-porygon-ody8k-back-mv8mzxqa.jpg"
+      "back": "images/cards/sabrina-porygon-ody8k-back-mv8mzxqa.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "sealeo-9sxvx",
-      "name": "Sealeo",
+      "name": "Entei",
       "set": "Promo",
       "number": "34",
       "notes": "Damage",
       "front": "images/cards/sealeo-9sxvx-front-mv8mzxr1.jpg",
       "thumb": "images/cards/sealeo-9sxvx-thumb-mv8mzxr1.jpg",
       "added": "2026-10-14T21:43:39.857Z",
-      "back": "images/cards/sealeo-9sxvx-back-mv8mzxrv.jpg"
+      "back": "images/cards/sealeo-9sxvx-back-mv8mzxrv.jpg",
+      "rarity": "promo",
+      "firstEdition": false
     },
     {
       "id": "lt-surge-s-raichu-76ur2",
@@ -120,7 +139,9 @@
       "front": "images/cards/lt-surge-s-raichu-76ur2-front-mv8n99iy.jpg",
       "thumb": "images/cards/lt-surge-s-raichu-76ur2-thumb-mv8n99iy.jpg",
       "added": "2026-10-14T21:50:55.354Z",
-      "back": "images/cards/lt-surge-s-raichu-76ur2-back-mv8n99le.jpg"
+      "back": "images/cards/lt-surge-s-raichu-76ur2-back-mv8n99le.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "sabrina-s-gastly-1ge4z",
@@ -131,7 +152,9 @@
       "front": "images/cards/sabrina-s-gastly-1ge4z-front-mv8n99m9.jpg",
       "thumb": "images/cards/sabrina-s-gastly-1ge4z-thumb-mv8n99m9.jpg",
       "added": "2026-10-14T21:50:55.354Z",
-      "back": "images/cards/sabrina-s-gastly-1ge4z-back-mv8n99n0.jpg"
+      "back": "images/cards/sabrina-s-gastly-1ge4z-back-mv8n99n0.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "articuno-dssla",
@@ -142,7 +165,9 @@
       "front": "images/cards/articuno-dssla-front-mv8n99nv.jpg",
       "thumb": "images/cards/articuno-dssla-thumb-mv8n99nv.jpg",
       "added": "2026-10-14T21:50:55.354Z",
-      "back": "images/cards/articuno-dssla-back-mv8n99oo.jpg"
+      "back": "images/cards/articuno-dssla-back-mv8n99oo.jpg",
+      "rarity": "promo",
+      "firstEdition": false
     },
     {
       "id": "dragonite-0hqdb",
@@ -153,7 +178,9 @@
       "front": "images/cards/dragonite-0hqdb-front-mv8o42is.jpg",
       "thumb": "images/cards/dragonite-0hqdb-thumb-mv8o42is.jpg",
       "added": "2026-10-14T22:14:52.612Z",
-      "back": "images/cards/dragonite-0hqdb-back-mv8o42jq.jpg"
+      "back": "images/cards/dragonite-0hqdb-back-mv8o42jq.jpg",
+      "rarity": "promo",
+      "firstEdition": false
     },
     {
       "id": "brock-s-onix-y9bxa",
@@ -164,7 +191,9 @@
       "front": "images/cards/brock-s-onix-y9bxa-front-mv8o42kk.jpg",
       "thumb": "images/cards/brock-s-onix-y9bxa-thumb-mv8o42kk.jpg",
       "added": "2026-10-14T22:14:52.612Z",
-      "back": "images/cards/brock-s-onix-y9bxa-back-mv8o42kw.jpg"
+      "back": "images/cards/brock-s-onix-y9bxa-back-mv8o42kw.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "misty-s-horsea-yyrhq",
@@ -175,7 +204,9 @@
       "front": "images/cards/misty-s-horsea-yyrhq-front-mv8o42l8.jpg",
       "thumb": "images/cards/misty-s-horsea-yyrhq-thumb-mv8o42l8.jpg",
       "added": "2026-10-14T22:14:52.612Z",
-      "back": "images/cards/misty-s-horsea-yyrhq-back-mv8o42ll.jpg"
+      "back": "images/cards/misty-s-horsea-yyrhq-back-mv8o42ll.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "brock-s-rhyhorn-jr0le",
@@ -186,7 +217,9 @@
       "front": "images/cards/brock-s-rhyhorn-jr0le-front-mv8o42ly.jpg",
       "thumb": "images/cards/brock-s-rhyhorn-jr0le-thumb-mv8o42ly.jpg",
       "added": "2026-10-14T22:14:52.612Z",
-      "back": "images/cards/brock-s-rhyhorn-jr0le-back-mv8o42ma.jpg"
+      "back": "images/cards/brock-s-rhyhorn-jr0le-back-mv8o42ma.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "misty-s-staryu-r1u4s",
@@ -197,7 +230,9 @@
       "front": "images/cards/misty-s-staryu-r1u4s-front-mv8o42mn.jpg",
       "thumb": "images/cards/misty-s-staryu-r1u4s-thumb-mv8o42mn.jpg",
       "added": "2026-10-14T22:14:52.612Z",
-      "back": "images/cards/misty-s-staryu-r1u4s-back-mv8o42mz.jpg"
+      "back": "images/cards/misty-s-staryu-r1u4s-back-mv8o42mz.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "misty-s-shellder-rgeu7",
@@ -208,7 +243,9 @@
       "front": "images/cards/misty-s-shellder-rgeu7-front-mv8o42nc.jpg",
       "thumb": "images/cards/misty-s-shellder-rgeu7-thumb-mv8o42nc.jpg",
       "added": "2026-10-14T22:14:52.612Z",
-      "back": "images/cards/misty-s-shellder-rgeu7-back-mv8o42xf.jpg"
+      "back": "images/cards/misty-s-shellder-rgeu7-back-mv8o42xf.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "koga-s-pidgey-h8i60",
@@ -219,7 +256,9 @@
       "front": "images/cards/koga-s-pidgey-h8i60-front-mv8o42ya.jpg",
       "thumb": "images/cards/koga-s-pidgey-h8i60-thumb-mv8o42ya.jpg",
       "added": "2026-10-14T22:14:52.612Z",
-      "back": "images/cards/koga-s-pidgey-h8i60-back-mv8o42z1.jpg"
+      "back": "images/cards/koga-s-pidgey-h8i60-back-mv8o42z1.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "blaine-s-doduo-m53q5",
@@ -230,7 +269,9 @@
       "front": "images/cards/blaine-s-doduo-m53q5-front-mv8o42zn.jpg",
       "thumb": "images/cards/blaine-s-doduo-m53q5-thumb-mv8o42zn.jpg",
       "added": "2026-10-14T22:14:52.612Z",
-      "back": "images/cards/blaine-s-doduo-m53q5-back-mv8o430g.jpg"
+      "back": "images/cards/blaine-s-doduo-m53q5-back-mv8o430g.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "koga-s-kakuna-qgs41",
@@ -241,7 +282,9 @@
       "front": "images/cards/koga-s-kakuna-qgs41-front-mv8o4313.jpg",
       "thumb": "images/cards/koga-s-kakuna-qgs41-thumb-mv8o4313.jpg",
       "added": "2026-10-14T22:14:52.612Z",
-      "back": "images/cards/koga-s-kakuna-qgs41-back-mv8o431t.jpg"
+      "back": "images/cards/koga-s-kakuna-qgs41-back-mv8o431t.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "blaine-s-vulpix-4s0f1",
@@ -252,7 +295,9 @@
       "front": "images/cards/blaine-s-vulpix-4s0f1-front-mv8o432k.jpg",
       "thumb": "images/cards/blaine-s-vulpix-4s0f1-thumb-mv8o432k.jpg",
       "added": "2026-10-14T22:14:52.612Z",
-      "back": "images/cards/blaine-s-vulpix-4s0f1-back-mv8o433f.jpg"
+      "back": "images/cards/blaine-s-vulpix-4s0f1-back-mv8o433f.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "koffing-japanese-i923m",
@@ -263,7 +308,9 @@
       "front": "images/cards/koffing-japanese-i923m-front-mv8pocgk.jpg",
       "thumb": "images/cards/koffing-japanese-i923m-thumb-mv8pocgk.jpg",
       "added": "2026-10-14T22:58:38.228Z",
-      "back": "images/cards/koffing-japanese-i923m-back-mv8pochm.jpg"
+      "back": "images/cards/koffing-japanese-i923m-back-mv8pochm.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "koga-s-zubat-t7z90",
@@ -274,7 +321,9 @@
       "front": "images/cards/koga-s-zubat-t7z90-front-mv8pocio.jpg",
       "thumb": "images/cards/koga-s-zubat-t7z90-thumb-mv8pocio.jpg",
       "added": "2026-10-14T22:58:38.228Z",
-      "back": "images/cards/koga-s-zubat-t7z90-back-mv8pocjy.jpg"
+      "back": "images/cards/koga-s-zubat-t7z90-back-mv8pocjy.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "jolteon-japanese-6wnj9",
@@ -285,7 +334,9 @@
       "front": "images/cards/jolteon-japanese-6wnj9-front-mv8pocl0.jpg",
       "thumb": "images/cards/jolteon-japanese-6wnj9-thumb-mv8pocl0.jpg",
       "added": "2026-10-14T22:58:38.228Z",
-      "back": "images/cards/jolteon-japanese-6wnj9-back-mv8poe5r.jpg"
+      "back": "images/cards/jolteon-japanese-6wnj9-back-mv8poe5r.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "xatu-japanese-3gezm",
@@ -296,7 +347,9 @@
       "front": "images/cards/xatu-japanese-3gezm-front-mv8rmk7k.jpg",
       "thumb": "images/cards/xatu-japanese-3gezm-thumb-mv8rmk7k.jpg",
       "added": "2026-10-14T23:53:14.192Z",
-      "back": "images/cards/xatu-japanese-3gezm-back-mv8rmkdy.jpg"
+      "back": "images/cards/xatu-japanese-3gezm-back-mv8rmkdy.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "mewtwo-s37u2",
@@ -307,7 +360,9 @@
       "front": "images/cards/mewtwo-s37u2-front-mv8rmkf0.jpg",
       "thumb": "images/cards/mewtwo-s37u2-thumb-mv8rmkf0.jpg",
       "added": "2026-10-14T23:53:14.192Z",
-      "back": "images/cards/mewtwo-s37u2-back-mv8rmkg3.jpg"
+      "back": "images/cards/mewtwo-s37u2-back-mv8rmkg3.jpg",
+      "rarity": "promo",
+      "firstEdition": false
     },
     {
       "id": "dark-machamp-7baac",
@@ -318,7 +373,9 @@
       "front": "images/cards/dark-machamp-7baac-front-mv8rmkh6.jpg",
       "thumb": "images/cards/dark-machamp-7baac-thumb-mv8rmkh6.jpg",
       "added": "2026-10-14T23:53:14.192Z",
-      "back": "images/cards/dark-machamp-7baac-back-mv8rmkic.jpg"
+      "back": "images/cards/dark-machamp-7baac-back-mv8rmkic.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "gyarados-353v6",
@@ -329,7 +386,9 @@
       "front": "images/cards/gyarados-353v6-front-mv8rmkjc.jpg",
       "thumb": "images/cards/gyarados-353v6-thumb-mv8rmkjc.jpg",
       "added": "2026-10-14T23:53:14.192Z",
-      "back": "images/cards/gyarados-353v6-back-mv8rmm46.jpg"
+      "back": "images/cards/gyarados-353v6-back-mv8rmm46.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "chansey-jc7qu",
@@ -340,7 +399,9 @@
       "front": "images/cards/chansey-jc7qu-front-mv8rmmx6.jpg",
       "thumb": "images/cards/chansey-jc7qu-thumb-mv8rmmx6.jpg",
       "added": "2026-10-14T23:53:14.192Z",
-      "back": "images/cards/chansey-jc7qu-back-mv8rmoip.jpg"
+      "back": "images/cards/chansey-jc7qu-back-mv8rmoip.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "venusaur-7eowl",
@@ -351,7 +412,9 @@
       "front": "images/cards/venusaur-7eowl-front-mv8rmot6.jpg",
       "thumb": "images/cards/venusaur-7eowl-thumb-mv8rmot6.jpg",
       "added": "2026-10-14T23:53:14.192Z",
-      "back": "images/cards/venusaur-7eowl-back-mv8rmouc.jpg"
+      "back": "images/cards/venusaur-7eowl-back-mv8rmouc.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "hypno-zgmky",
@@ -362,7 +425,9 @@
       "front": "images/cards/hypno-zgmky-front-mv8s7zyv.jpg",
       "thumb": "images/cards/hypno-zgmky-thumb-mv8s7zyv.jpg",
       "added": "2026-10-15T00:09:54.391Z",
-      "back": "images/cards/hypno-zgmky-back-mv8s80gn.jpg"
+      "back": "images/cards/hypno-zgmky-back-mv8s80gn.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "light-togetic-ka06n",
@@ -373,7 +438,9 @@
       "front": "images/cards/light-togetic-ka06n-front-mv8s80hi.jpg",
       "thumb": "images/cards/light-togetic-ka06n-thumb-mv8s80hi.jpg",
       "added": "2026-10-15T00:09:54.391Z",
-      "back": "images/cards/light-togetic-ka06n-back-mv8s80ib.jpg"
+      "back": "images/cards/light-togetic-ka06n-back-mv8s80ib.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "hitmonchan-uwok8",
@@ -384,7 +451,9 @@
       "front": "images/cards/hitmonchan-uwok8-front-mv8sfz7y.jpg",
       "thumb": "images/cards/hitmonchan-uwok8-thumb-mv8sfz7y.jpg",
       "added": "2026-10-15T00:16:06.670Z",
-      "back": "images/cards/hitmonchan-uwok8-back-mv8sg0sp.jpg"
+      "back": "images/cards/hitmonchan-uwok8-back-mv8sg0sp.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "magmar-vlhv2",
@@ -395,7 +464,9 @@
       "front": "images/cards/magmar-vlhv2-front-mv8sg1ld.jpg",
       "thumb": "images/cards/magmar-vlhv2-thumb-mv8sg1ld.jpg",
       "added": "2026-10-15T00:16:06.670Z",
-      "back": "images/cards/magmar-vlhv2-back-mv8sg366.jpg"
+      "back": "images/cards/magmar-vlhv2-back-mv8sg366.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "nidoqueen-5df2q",
@@ -406,7 +477,9 @@
       "front": "images/cards/nidoqueen-5df2q-front-mv8tev8m.jpg",
       "thumb": "images/cards/nidoqueen-5df2q-thumb-mv8tev8m.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/nidoqueen-5df2q-back-mv8tevq8.jpg"
+      "back": "images/cards/nidoqueen-5df2q-back-mv8tevq8.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "murkrow-3p7re",
@@ -417,7 +490,9 @@
       "front": "images/cards/murkrow-3p7re-front-mv8tevst.jpg",
       "thumb": "images/cards/murkrow-3p7re-thumb-mv8tevst.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/murkrow-3p7re-back-mv8tevu5.jpg"
+      "back": "images/cards/murkrow-3p7re-back-mv8tevu5.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "ninetales-x0pww",
@@ -428,7 +503,9 @@
       "front": "images/cards/ninetales-x0pww-front-mv8tewn0.jpg",
       "thumb": "images/cards/ninetales-x0pww-thumb-mv8tewn0.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/ninetales-x0pww-back-mv8tey7s.jpg"
+      "back": "images/cards/ninetales-x0pww-back-mv94gezo.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "charmander-mcxfr",
@@ -439,7 +516,9 @@
       "front": "images/cards/charmander-mcxfr-front-mv8tez0w.jpg",
       "thumb": "images/cards/charmander-mcxfr-thumb-mv8tez0w.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/charmander-mcxfr-back-mv8tf0m5.jpg"
+      "back": "images/cards/charmander-mcxfr-back-mv8tf0m5.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "raichu-tgo28",
@@ -450,7 +529,9 @@
       "front": "images/cards/raichu-tgo28-front-mv8tf1ev.jpg",
       "thumb": "images/cards/raichu-tgo28-thumb-mv8tf1ev.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/raichu-tgo28-back-mv8tf305.jpg"
+      "back": "images/cards/raichu-tgo28-back-mv8tf305.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "kingdra-b76ai",
@@ -461,7 +542,9 @@
       "front": "images/cards/kingdra-b76ai-front-mv8tf3t9.jpg",
       "thumb": "images/cards/kingdra-b76ai-thumb-mv8tf3t9.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/kingdra-b76ai-back-mv8tf5ee.jpg"
+      "back": "images/cards/kingdra-b76ai-back-mv8tf5ee.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "dark-vaporeon-y06m7",
@@ -472,7 +555,9 @@
       "front": "images/cards/dark-vaporeon-y06m7-front-mv8tf67i.jpg",
       "thumb": "images/cards/dark-vaporeon-y06m7-thumb-mv8tf67i.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/dark-vaporeon-y06m7-back-mv8tf78v.jpg"
+      "back": "images/cards/dark-vaporeon-y06m7-back-mv8tf78v.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "koga-s-kakuna-kro2q",
@@ -483,7 +568,9 @@
       "front": "images/cards/koga-s-kakuna-kro2q-front-mv8tf81z.jpg",
       "thumb": "images/cards/koga-s-kakuna-kro2q-thumb-mv8tf81z.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/koga-s-kakuna-kro2q-back-mv8tf9mt.jpg"
+      "back": "images/cards/koga-s-kakuna-kro2q-back-mv8tf9mt.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "sabrina-s-kadabra-u3cn6",
@@ -494,7 +581,9 @@
       "front": "images/cards/sabrina-s-kadabra-u3cn6-front-mv8tf9vo.jpg",
       "thumb": "images/cards/sabrina-s-kadabra-u3cn6-thumb-mv8tf9vo.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/sabrina-s-kadabra-u3cn6-back-mv8tf9wv.jpg"
+      "back": "images/cards/sabrina-s-kadabra-u3cn6-back-mv8tf9wv.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "skitty-heax3",
@@ -516,7 +605,9 @@
       "front": "images/cards/eevee-l5brg-front-mv8tfa06.jpg",
       "thumb": "images/cards/eevee-l5brg-thumb-mv8tfa06.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/eevee-l5brg-back-mv8tfa1a.jpg"
+      "back": "images/cards/eevee-l5brg-back-mv8tfa1a.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "exeggcute-3n7g1",
@@ -527,7 +618,9 @@
       "front": "images/cards/exeggcute-3n7g1-front-mv8tfa2a.jpg",
       "thumb": "images/cards/exeggcute-3n7g1-thumb-mv8tfa2a.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/exeggcute-3n7g1-back-mv8tfa3k.jpg"
+      "back": "images/cards/exeggcute-3n7g1-back-mv8tfa3k.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "raticate-fva6a",
@@ -538,7 +631,9 @@
       "front": "images/cards/raticate-fva6a-front-mv8tfa4l.jpg",
       "thumb": "images/cards/raticate-fva6a-thumb-mv8tfa4l.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/raticate-fva6a-back-mv8tfa5p.jpg"
+      "back": "images/cards/raticate-fva6a-back-mv8tfa5p.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "arcanine-8bz9y",
@@ -549,7 +644,9 @@
       "front": "images/cards/arcanine-8bz9y-front-mv8tfa6o.jpg",
       "thumb": "images/cards/arcanine-8bz9y-thumb-mv8tfa6o.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/arcanine-8bz9y-back-mv8tfaf1.jpg"
+      "back": "images/cards/arcanine-8bz9y-back-mv8tfaf1.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "jolteon-obdyn",
@@ -560,7 +657,9 @@
       "front": "images/cards/jolteon-obdyn-front-mv8tfb83.jpg",
       "thumb": "images/cards/jolteon-obdyn-thumb-mv8tfb83.jpg",
       "added": "2026-10-15T00:43:14.470Z",
-      "back": "images/cards/jolteon-obdyn-back-mv8tfct0.jpg"
+      "back": "images/cards/jolteon-obdyn-back-mv8tfct0.jpg",
+      "rarity": "rare",
+      "firstEdition": false
     },
     {
       "id": "eevee-xzapd",
@@ -571,7 +670,9 @@
       "front": "images/cards/eevee-xzapd-front-mv8vhz07.jpg",
       "thumb": "images/cards/eevee-xzapd-thumb-mv8vhz07.jpg",
       "added": "2026-10-15T01:41:38.550Z",
-      "back": "images/cards/eevee-xzapd-back-mv8vhz1c.jpg"
+      "back": "images/cards/eevee-xzapd-back-mv8vhz1c.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "growlithe-49z1s",
@@ -582,7 +683,9 @@
       "front": "images/cards/growlithe-49z1s-front-mv8vi0ts.jpg",
       "thumb": "images/cards/growlithe-49z1s-thumb-mv8vi0ts.jpg",
       "added": "2026-10-15T01:41:38.550Z",
-      "back": "images/cards/growlithe-49z1s-back-mv8vi6t0.jpg"
+      "back": "images/cards/growlithe-49z1s-back-mv8vi6t0.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "sandslash-wm47o",
@@ -593,7 +696,9 @@
       "front": "images/cards/sandslash-wm47o-front-mv8w6xqe.jpg",
       "thumb": "images/cards/sandslash-wm47o-thumb-mv8w6xqe.jpg",
       "added": "2026-10-15T02:01:03.302Z",
-      "back": "images/cards/sandslash-wm47o-back-mv8w6ymi.jpg"
+      "back": "images/cards/sandslash-wm47o-back-mv8w6ymi.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "pikachu-erqhr",
@@ -604,7 +709,9 @@
       "front": "images/cards/pikachu-erqhr-front-mv8w6zf6.jpg",
       "thumb": "images/cards/pikachu-erqhr-thumb-mv8w6zf6.jpg",
       "added": "2026-10-15T02:01:03.302Z",
-      "back": "images/cards/pikachu-erqhr-back-mv8w710f.jpg"
+      "back": "images/cards/pikachu-erqhr-back-mv8w710f.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "golbat-2t3op",
@@ -615,7 +722,9 @@
       "front": "images/cards/golbat-2t3op-front-mv8ypgoy.jpg",
       "thumb": "images/cards/golbat-2t3op-thumb-mv8ypgoy.jpg",
       "added": "2026-10-15T03:11:26.914Z",
-      "back": "images/cards/golbat-2t3op-back-mv8ypi9y.jpg"
+      "back": "images/cards/golbat-2t3op-back-mv8ypi9y.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "rapidash-7x78w",
@@ -626,7 +735,9 @@
       "front": "images/cards/rapidash-7x78w-front-mv8ypj2m.jpg",
       "thumb": "images/cards/rapidash-7x78w-thumb-mv8ypj2m.jpg",
       "added": "2026-10-15T03:11:26.914Z",
-      "back": "images/cards/rapidash-7x78w-back-mv8ypknt.jpg"
+      "back": "images/cards/rapidash-7x78w-back-mv8ypknt.jpg",
+      "rarity": "uncommon",
+      "firstEdition": false
     },
     {
       "id": "sandshrew-6emif",
@@ -637,7 +748,9 @@
       "front": "images/cards/sandshrew-6emif-front-mv8z6evo.jpg",
       "thumb": "images/cards/sandshrew-6emif-thumb-mv8z6evo.jpg",
       "added": "2026-10-15T03:24:37.716Z",
-      "back": "images/cards/sandshrew-6emif-back-mv8z6f69.jpg"
+      "back": "images/cards/sandshrew-6emif-back-mv8z6f69.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "pikachu-p9uy8",
@@ -659,7 +772,9 @@
       "front": "images/cards/ponyta-r5nwf-front-mv8z6f9t.jpg",
       "thumb": "images/cards/ponyta-r5nwf-thumb-mv8z6f9t.jpg",
       "added": "2026-10-15T03:24:37.716Z",
-      "back": "images/cards/ponyta-r5nwf-back-mv8z6far.jpg"
+      "back": "images/cards/ponyta-r5nwf-back-mv8z6far.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "zubat-s7gdt",
@@ -670,7 +785,9 @@
       "front": "images/cards/zubat-s7gdt-front-mv8z6fbm.jpg",
       "thumb": "images/cards/zubat-s7gdt-thumb-mv8z6fbm.jpg",
       "added": "2026-10-15T03:24:37.716Z",
-      "back": "images/cards/zubat-s7gdt-back-mv8z6fcm.jpg"
+      "back": "images/cards/zubat-s7gdt-back-mv8z6fcm.jpg",
+      "rarity": "common",
+      "firstEdition": false
     },
     {
       "id": "pikachu-r6kqc",
@@ -681,7 +798,9 @@
       "front": "images/cards/pikachu-r6kqc-front-mv8z6fdk.jpg",
       "thumb": "images/cards/pikachu-r6kqc-thumb-mv8z6fdk.jpg",
       "added": "2026-10-15T03:24:37.716Z",
-      "back": "images/cards/pikachu-r6kqc-back-mv8z6fsm.jpg"
+      "back": "images/cards/pikachu-r6kqc-back-mv8z6fsm.jpg",
+      "rarity": "promo",
+      "firstEdition": false
     },
     {
       "id": "pikachu-im4j6",
@@ -692,7 +811,9 @@
       "front": "images/cards/pikachu-im4j6-front-mv8z6ftb.jpg",
       "thumb": "images/cards/pikachu-im4j6-thumb-mv8z6ftb.jpg",
       "added": "2026-10-15T03:24:37.716Z",
-      "back": "images/cards/pikachu-im4j6-back-mv8z6fua.jpg"
+      "back": "images/cards/pikachu-im4j6-back-mv8z6fua.jpg",
+      "rarity": "common",
+      "firstEdition": false
     }
   ]
 }
