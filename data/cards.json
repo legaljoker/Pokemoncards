@@ -373,6 +373,28 @@
       "thumb": "images/cards/light-togetic-ka06n-thumb-mv8s80hi.jpg",
       "added": "2026-10-15T00:09:54.391Z",
       "back": "images/cards/light-togetic-ka06n-back-mv8s80ib.jpg"
+    },
+    {
+      "id": "hitmonchan-uwok8",
+      "name": "Hitmonchan",
+      "set": "",
+      "number": "7/102",
+      "notes": "",
+      "front": "images/cards/hitmonchan-uwok8-front-mv8sfz7y.jpg",
+      "thumb": "images/cards/hitmonchan-uwok8-thumb-mv8sfz7y.jpg",
+      "added": "2026-10-15T00:16:06.670Z",
+      "back": "images/cards/hitmonchan-uwok8-back-mv8sg0sp.jpg"
+    },
+    {
+      "id": "magmar-vlhv2",
+      "name": "Magmar",
+      "set": "",
+      "number": "36/102",
+      "notes": "",
+      "front": "images/cards/magmar-vlhv2-front-mv8sg1ld.jpg",
+      "thumb": "images/cards/magmar-vlhv2-thumb-mv8sg1ld.jpg",
+      "added": "2026-10-15T00:16:06.670Z",
+      "back": "images/cards/magmar-vlhv2-back-mv8sg366.jpg"
     }
   ]
 }
