@@ -15,11 +15,16 @@ const RARITY = {
   promo: { symbol: '★', label: 'Promo' },
 };
 
+// Your own ID for a card, e.g. "#0042" — tells duplicate cards apart.
+function cardId(card) {
+  return card.cardNo ? '#' + String(card.cardNo).padStart(4, '0') : '';
+}
+
 // True if every word typed in the search box appears in the card's text.
 function cardMatches(card, query) {
   const words = normalize(query).split(/\s+/).filter(Boolean);
   if (!words.length) return true;
-  const hay = normalize([card.name, card.set, card.number, card.notes,
+  const hay = normalize([cardId(card), card.name, card.set, card.number, card.notes,
     RARITY[card.rarity]?.label, card.firstEdition ? '1st first edition' : ''].join(' '));
   return words.every(w => hay.includes(w));
 }

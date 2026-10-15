@@ -13,6 +13,7 @@ const els = {
   name: document.getElementById('vName'),
   sub: document.getElementById('vSub'),
   notes: document.getElementById('vNotes'),
+  id: document.getElementById('vId'),
   flip: document.getElementById('vFlip'),
   prev: document.getElementById('vPrev'),
   next: document.getElementById('vNext'),
@@ -52,7 +53,7 @@ function render() {
 
   els.grid.innerHTML = shown.map((c, i) => `
     <button class="card-tile" data-i="${i}">
-      <div class="img-wrap"><img loading="lazy" src="${escapeHtml(c.thumb || c.front)}" alt="${escapeHtml(c.name)}"></div>
+      <div class="img-wrap"><img loading="lazy" src="${escapeHtml(c.thumb || c.front)}" alt="${escapeHtml(c.name)}">${c.cardNo ? `<span class="badge badge-id">${cardId(c)}</span>` : ''}</div>
       ${c.back ? '<span class="badge">↻ back</span>' : ''}
       ${c.firstEdition ? '<span class="badge badge-left">1st Ed.</span>' : ''}
       <div class="name">${escapeHtml(c.name || 'Unnamed card')}</div>
@@ -95,6 +96,8 @@ function showCard() {
   els.name.textContent = c.name || 'Unnamed card';
   els.sub.textContent = cardSubtitle(c);
   els.notes.textContent = c.notes || '';
+  els.id.textContent = cardId(c);
+  els.id.hidden = !c.cardNo;
   els.flip.hidden = !c.back;
   els.flip.textContent = 'Show back';
   els.prev.disabled = current <= 0;

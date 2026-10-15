@@ -475,6 +475,8 @@ $('saveQueue').addEventListener('click', async () => {
     const cards = await readCards();
     const files = [];
     const now = new Date().toISOString();
+    // Each card gets the next ID number; numbers are never reused.
+    let nextNo = cards.reduce((m, c) => Math.max(m, c.cardNo || 0), 0) + 1;
     for (const item of queue) {
       const id = newId(item.name);
       const card = {
@@ -488,6 +490,7 @@ $('saveQueue').addEventListener('click', async () => {
         front: imagePath(id, 'front'),
         thumb: imagePath(id, 'thumb'),
         added: now,
+        cardNo: nextNo++,
       };
       files.push({ path: card.front, base64: await canvasToBase64(item.front, FRONT_MAX) });
       files.push({ path: card.thumb, base64: await canvasToBase64(item.front, THUMB_MAX, 0.8) });
@@ -548,6 +551,7 @@ function manageItemEl(m) {
   el.innerHTML = `
     <div class="thumbs">${thumbsHtml(m.card.thumb || m.card.front, m.card.back)}</div>
     <div class="fields">
+      <div class="card-id-label">Card ${escapeHtml(cardId(m.card))}</div>
       ${itemFieldsHtml(m.edit)}
       <div class="btn-row">
         <label class="btn small file-btn">Front photo<input type="file" accept="image/*" data-side="front"></label>
